@@ -31,7 +31,7 @@ I'm a dedicated computer science student with a passion for:
 
 ### 🎯 Fun fact
 
-**⚡️ Algorithms ablaze, logic my compass. The digital horizon stretches endless, a playground for my innovation. I'll break boundaries, one line of code at a time. More & More! 💻**
+**⚡️ Algorithms ablaze, logic my compass. The digital horizon stretches endless, a playground for my innovation. I'll break boundaries, one line of code at a time. More & More!  💻**
 
 <!-- ### 🎉 Achievements (Coming soon)
 
