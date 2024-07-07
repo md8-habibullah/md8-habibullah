@@ -23,7 +23,7 @@ I'm a dedicated computer science student with a passion for:
 * LinkedIn: [linkedin.com/in/md8-habibullahs](https://linkedin.com/in/md8-habibullahs)
 * Experiences: [lookup here](https://github.com/md8-habibullah)
 
-###🌱 Currently learning
+### 🌱 Currently learning
 
 * 🕵️‍♂️ Ethical Hacking Tools: Expanding my skills in penetration testing and vulnerability assessment.
 * 🌐 Web Development: Building dynamic web applications using modern technologies like HTML, CSS, JavaScript, and React.
