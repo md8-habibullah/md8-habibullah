@@ -36,10 +36,6 @@ I'm a dedicated computer science student with a passion for:
 
 ---------
 
-## Language Stats:
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-
 <!-- 
 ### 🎉 Achievements (Coming soon)
 
