@@ -2,7 +2,7 @@
 
 # 👋🏼 Hi, I'm HABIBULLAH
 ### 🎓 Computer Science Student & Enthusiast 
-[![](https://visitcount.itsvg.in/api?id=md8-habibullah&label=Profile%20Traffic&color=1&icon=1&pretty=true)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=md8-habibullah&label=Profile%20Visits&color=1&icon=6&pretty=true)](https://visitcount.itsvg.in)
 
 I'm a dedicated computer science student with a passion for:
 
