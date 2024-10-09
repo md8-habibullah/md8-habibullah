@@ -1,9 +1,7 @@
 <!-- https://md8-habibullah.github.io/md8-habibullah/ >> README.md -->
 
 # 👋🏼 Hi, I'm HABIBULLAH
-### 🎓 Computer Science Student & Enthusiast 
-
-[![](https://visitcount.itsvg.in/api?id=md8-habibullah&label=Profile%20Traffic&color=1&icon=2&pretty=false)](https://visitcount.itsvg.in)
+### 🎓 Computer Science Student & Enthusiast  [![](https://visitcount.itsvg.in/api?id=md8-habibullah&label=Profile%20Traffic&color=1&icon=1&pretty=true)](https://visitcount.itsvg.in)
 
 I'm a dedicated computer science student with a passion for:
 
