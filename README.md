@@ -1,7 +1,7 @@
 <!-- https://md8-habibullah.github.io/md8-habibullah/ >> README.md -->
 
 # 👋🏼 Hi, I'm HABIBULLAH
-### 🎓 Computer Science Student & Enthusiast  ||| ---
+### 🎓 Computer Science Student & Enthusiast 
 [![](https://visitcount.itsvg.in/api?id=md8-habibullah&icon=0&color=0)](https://visitcount.itsvg.in)
 
 I'm a dedicated computer science student with a passion for:
@@ -10,7 +10,7 @@ I'm a dedicated computer science student with a passion for:
 * **🌐 Web Development**: Building fast, secure, and scalable web applications using modern technologies like HTML, CSS, JavaScript, and React.
 * **📱 Application Development**: Creating innovative mobile and desktop applications using Java, Kotlin, and Swift.
 * **🦾 Building Intelligent Bots**:  Developing interactive and helpful bots using Python to automate tasks and enhance user experiences.
-* **🔎 Always Learning!**: Currently focusing on mastering advanced ethical hacking techniques and building complex web applications.
+* **🔎 Always Learning!**: Currently mastering advanced ethical hacking techniques and building complex web applications.
 
 ### 💬 Ask me about
 
@@ -34,19 +34,17 @@ I'm a dedicated computer science student with a passion for:
 
 **⚡️ Algorithms ablaze, logic my compass. The digital horizon stretches endless, a playground for my innovation. I'll break boundaries, one line of code at a time. More & More! 💻**
 
+---------
+
+## Language Stats:
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+
+
 <!-- 
 ### 🎉 Achievements (Coming soon)
 
 * Participated in [Hackathon 2022](https://example.com/hackathon2022)
 * Completed [Cyber Security Course](https://example.com/cybersecuritycourse)
 -->
-
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=md8-habibullah&theme=dark&hide_border=false&include_all_commits=false&count_private=false) ![](https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-![](https://github-readme-streak-stats.herokuapp.com/?user=md8-habibullah&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
