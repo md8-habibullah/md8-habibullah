@@ -38,7 +38,7 @@ I'm a dedicated computer science student with a passion for:
 
 <!-- 
 ### 🎉 Achievements (Coming soon)
-
+------
 * Participated in [Hackathon 2022](https://example.com/hackathon2022)
 * Completed [Cyber Security Course](https://example.com/cybersecuritycourse)
 -->
