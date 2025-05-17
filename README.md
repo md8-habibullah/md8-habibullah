@@ -1,46 +1,60 @@
-<!-- https://md8-habibullah.github.io/md8-habibullah/ >> README.md -->
+<!-- https://md8-habibullah.github.io/md8-habibullah/ -->
 
-# 👋🏼 Hi, I'm HABIBULLAH
-### 🎓 Computer Science Student & Enthusiast 
-[![](https://visitcount.itsvg.in/api?id=md8-habibullah&label=Profile%20Visits&color=1&icon=0&pretty=true)](https://visitcount.itsvg.in)
+# 💻 Hey, I'm Habibullah – CSE Student & Digital Explorer
 
-I'm a dedicated computer science student with a passion for:
+[![](https://visitcount.itsvg.in/api?id=md8-habibullah&label=Visitors&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
-* **🔒 Cyber Security**: Exploring the world of ethical hacking and security research to make the digital world a safer place.
-* **🌐 Web Development**: Building fast, secure, and scalable web applications using modern technologies like HTML, CSS, JavaScript, and React.
-* **📱 Application Development**: Creating innovative mobile and desktop applications using Java, Kotlin, and Swift.
-* **🦾 Building Intelligent Bots**:  Developing interactive and helpful bots using Python to automate tasks and enhance user experiences.
-* **🔎 Always Learning!**: Currently mastering advanced ethical hacking techniques and building complex web applications.
+---
 
-### 💬 Ask me about
+## 🌌 About Me
 
-* Cyber Security 🛡️
-* Web Development 💻
-* Application Development 📈
+Hello! I'm Habibullah, a Computer Science & Engineering student with a passion for exploring the depths of technology. I thrive on building, breaking (ethically), and understanding systems to make the digital world more secure and intelligent.
 
-### 📲 Get in touch
+---
 
-* Email: [md8.habibullah@gmail.com](mailto:md8.habibullah@gmail.com)
-* LinkedIn: [linkedin.com/in/md8-habibullahs](https://linkedin.com/in/md8-habibullahs)
-* Experiences: [lookup here](https://github.com/md8-habibullah)
+## 🧠 Interests
 
-### 🌱 Currently learning
+- 🔐 **Ethical Hacking** – Exploring vulnerabilities to strengthen security
+- 💻 **Software Development** – Crafting solutions in languages like C, C++, Python, and Java
+- 🌐 **Web Development** – Designing responsive and dynamic web applications
+- 🤖 **Artificial Intelligence** – Delving into AI and intelligent agents
+- 📚 **Continuous Learning** – Embracing the journey of lifelong learning
 
-* 🕵️‍♂️ Ethical Hacking Tools: Expanding my skills in penetration testing and vulnerability assessment.
-* 🌐 Web Development: Building dynamic web applications using modern technologies like HTML, CSS, JavaScript, and React.
-* 💻 Programming: Mastering the fundamentals of C, C++, and Python programming languages.
+---
 
-### 🎯 Fun fact
+## 🔧 Tools & Technologies
 
-**⚡️ Algorithms ablaze, logic my compass. The digital horizon stretches endless, a playground for my innovation. I'll break boundaries, one line of code at a time. More & More! 💻**
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Linux](https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
----------
+---
 
-<!-- 
-### 🎉 Achievements (Coming soon)
-------
-* Participated in [Hackathon 2022](https://example.com/hackathon2022)
-* Completed [Cyber Security Course](https://example.com/cybersecuritycourse)
--->
+## 🌱 Currently Learning
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+- 🛡️ Advanced ethical hacking techniques and security assessments
+- 🧠 Building intelligent systems and AI agents
+- 🧰 Enhancing proficiency in Linux environments
+- 📝 Writing clean, efficient, and maintainable code
+
+---
+
+## 💬 Let's Connect
+
+Feel free to reach out or follow my journey:
+
+📘 [Facebook](https://www.facebook.com/md8.habibullah/)
+
+---
+
+## ✨ Fun Fact
+
+> "In the realm of code, I find my canvas; in the logic, my brush; painting solutions that bridge the gap between possibility and reality."
+
+---
+
+<!-- Designed with passion and purpose -->
