@@ -1,0 +1,131 @@
+
+body {
+  background: #181a1b;
+  color: #eaeaea;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+main {
+  max-width: 760px;
+  margin: 40px auto;
+  background: #23272e;
+  border-radius: 12px;
+  box-shadow: 0 2px 24px #0005;
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+h1, h2, h3 {
+  font-weight: 700;
+  color: #b5f4ff;
+  letter-spacing: 1px;
+  margin-top: 2.2rem;
+}
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #31343b;
+  padding-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-bottom: 1.2rem;
+  margin-top: 2.2rem;
+}
+h3 {
+  font-size: 1.19rem;
+}
+.subtitle {
+  color: #59e6d9;
+  font-size: 1.1rem;
+  padding-bottom: 0.8rem;
+}
+.quote {
+  background: #232c35;
+  border-left: 4px solid #6ee7b7;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #b8e3e3;
+}
+ul, ol {
+  margin-left: 1.5em;
+}
+.badges {
+  margin: 1.1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7em;
+}
+.badges img {
+  height: 32px;
+}
+.tools-list {
+  margin: 0.8em 0 1.7em 0;
+  padding-left: 1.7em;
+}
+.section {
+  margin-bottom: 2.2em;
+}
+a {
+  color: #6ee7b7;
+  text-decoration: none;
+  transition: color 0.16s;
+}
+a:hover {
+  color: #facc15;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  margin-bottom: 0.7em;
+}
+.fun-fact {
+  background: #232c35;
+  border-radius: 8px;
+  padding: 1.2em 1.5em;
+  margin: 1.6em 0;
+  font-size: 1.07rem;
+  color: #e0e7ef;
+}
+.icon-title {
+  font-size: 1.55em;
+  margin-right: 0.2em;
+  vertical-align: middle;
+}
+.section-title {
+  font-size: 1.15em;
+  margin-right: 0.36em;
+  vertical-align: middle;
+}
+.emoji-li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 0.25em;
+}
+.emoji-li span {
+  font-size: 1.15em;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+.bold {
+  font-weight: bold;
+}
+.interest-list {
+  margin-bottom: 1.6em;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.5rem;
+  }
+  h1 { font-size: 1.3rem; }
+}
