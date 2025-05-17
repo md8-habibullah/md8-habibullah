@@ -1,5 +1,3 @@
-<!-- https://md8-habibullah.github.io/md8-habibullah/ -->
-
 # 💻 Hey, I'm Habibullah – CSE Student & Tech Explorer
 
 ---
@@ -60,6 +58,8 @@ With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software d
 
 ## 📡 Let's Connect
 
+- 🐙 GitHub: [github.com/md8-habibullah](https://github.com/md8-habibullah)
+- 🌐 Portfolio: [md8-habibullah.github.io/md8-habibullah](https://md8-habibullah.github.io/md8-habibullah/)
 - 📧 Email: [md8.habibullah*****](mailto:md8.habibullah@gmail.com)
 - 📘 Facebook: [facebook.com/md8.habibullah](https://www.facebook.com/md8.habibullah/)
 - 📸 Instagram: [instagram.com/md8.habibullah](https://www.instagram.com/md8.habibullah/)
