@@ -60,7 +60,7 @@ With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software d
 
 ## 📡 Let's Connect
 
-- 📧 Email: [md8.habibullah@gmail.com](mailto:md8.habibullah@gmail.com)  
+- 📧 Email: [md8.habibullah#*****.***](mailto:md8.habibullah@gmail.com)  
 - 📘 Facebook: [facebook.com/md8.habibullah](https://www.facebook.com/md8.habibullah/)  
 - 📸 Instagram: [instagram.com/md8.habibullah](https://www.instagram.com/md8.habibullah/)
 
