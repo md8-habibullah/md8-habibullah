@@ -8,14 +8,14 @@
 
 ## 🌌 About Me
 
-Hello! I'm Habibullah, a Computer Science & Engineering student with a passion for exploring the depths of technology. I thrive on building, breaking (ethically), and understanding systems to make the digital world more secure and intelligent.
+Hello! I'm Habibullah, a Computer Science & Engineering student passionate about exploring the depths of technology. I thrive on building, breaking (ethically), and understanding systems to make the digital world more secure and intelligent.
 
 ---
 
 ## 🧠 Interests
 
 - 🔐 **Ethical Hacking** – Exploring vulnerabilities to strengthen security
-- 💻 **Software Development** – Crafting solutions in languages like C, C++, Python, and Java
+- 💻 **Software & App Development** – Crafting solutions across platforms
 - 🌐 **Web Development** – Designing responsive and dynamic web applications
 - 🤖 **Artificial Intelligence** – Delving into AI and intelligent agents
 - 📚 **Continuous Learning** – Embracing the journey of lifelong learning
@@ -34,12 +34,14 @@ Hello! I'm Habibullah, a Computer Science & Engineering student with a passion f
 
 ---
 
-## 🌱 Currently Learning
+## 🌱 Currently Exploring
 
 - 🛡️ Advanced ethical hacking techniques and security assessments
 - 🧠 Building intelligent systems and AI agents
-- 🧰 Enhancing proficiency in Linux environments
+- 🧰 Enhancing proficiency in various Linux environments
 - 📝 Writing clean, efficient, and maintainable code
+- 🛠️ Developing both frontend and backend applications
+- 🤖 Creating bots to automate and enhance user experiences
 
 ---
 
@@ -47,7 +49,11 @@ Hello! I'm Habibullah, a Computer Science & Engineering student with a passion f
 
 Feel free to reach out or follow my journey:
 
+📧 [md8.habibullah@gmail.com](mailto:md8.habibullah@gmail.com)
+
 📘 [Facebook](https://www.facebook.com/md8.habibullah/)
+
+📸 [Instagram](https://www.instagram.com/md8.habibullah/)
 
 ---
 
