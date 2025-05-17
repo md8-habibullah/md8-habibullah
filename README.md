@@ -37,7 +37,14 @@ With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software d
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-> Experienced with tools like: `nmap`, `wireshark`, `hydra`, `burpsuite`, `tmux`, `awk`, `aircrack-ng`, `ghidra`, `radare2`, and more.
+> **Experienced with a wide variety of tools and ecosystems:**
+
+- **Cyber & Linux Tools:** `nmap`, `wireshark`, `hydra`, `burpsuite`, `aircrack-ng`, `tmux`, `awk`, `htop`, `netstat`, `radare2`, `ghidra`, system logs, bash scripting  
+- **Web Dev Stack:** HTML, CSS, JavaScript, React, Node.js, REST APIs, JSON, Axios, Tailwind, Bootstrap, browser dev tools  
+- **Programming:** Strong in C++ (STL, iostream, fstream, algorithms), Python (requests, pandas, Flask), JavaScript (DOM, async, ES6)  
+- **Automation & Productivity:** Zapier, Make (Integromat), GitHub Actions, Notion, Trello, Google Apps Script  
+- **Communication & Workflow:** Slack, Discord, Zoom, Git CLI, GitHub Projects, Markdown, VS Code extensions  
+- **Linux Ecosystem:** Terminal-based workflows, package managers (apt, pacman), system control tools, dotfiles config
 
 ---
 
