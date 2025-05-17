@@ -1,8 +1,7 @@
-
 body {
   background: #181a1b;
   color: #eaeaea;
-  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  font-family: "Segoe UI", "Roboto", Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.7;
@@ -15,7 +14,9 @@ main {
   box-shadow: 0 2px 24px #0005;
   padding: 2.5rem 2rem 2rem 2rem;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   color: #b5f4ff;
   letter-spacing: 1px;
@@ -54,7 +55,8 @@ h3 {
   font-style: italic;
   color: #b8e3e3;
 }
-ul, ol {
+ul,
+ol {
   margin-left: 1.5em;
 }
 .badges {
@@ -127,5 +129,7 @@ a:hover {
   main {
     padding: 1rem 0.5rem;
   }
-  h1 { font-size: 1.3rem; }
+  h1 {
+    font-size: 1.3rem;
+  }
 }

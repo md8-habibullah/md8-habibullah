@@ -7,7 +7,7 @@
 ## 🌌 About Me
 
 I'm Habibullah — a Computer Science & Engineering student on a journey to learn, build, and serve through technology.  
-With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software development**, I approach my work with intention and faith. Every line of code is written with the understanding that knowledge is a trust and should be used with purpose.  
+With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software development**, I approach my work with intention and faith. Every line of code is written with the understanding that knowledge is a trust and should be used with purpose.
 
 > _“Indeed, in the creation of the heavens and the earth... are signs for those who reflect.”_  
 > **– Al-Qur'an (3:190)**
@@ -16,11 +16,11 @@ With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software d
 
 ## 🧠 Interests
 
-- 🔐 **Ethical Hacking** – Exploring vulnerabilities responsibly to improve systems  
-- 🐧 **Linux & Terminal Tools** – Love working with open-source systems and the command line  
-- 💻 **Software & App Development** – Creating helpful tools and applications with clarity and simplicity  
-- 🌐 **Web Development** – From frontend interfaces to backend logic  
-- 🤖 **AI & Automation** – Learning intelligent systems that assist and empower  
+- 🔐 **Ethical Hacking** – Exploring vulnerabilities responsibly to improve systems
+- 🐧 **Linux & Terminal Tools** – Love working with open-source systems and the command line
+- 💻 **Software & App Development** – Creating helpful tools and applications with clarity and simplicity
+- 🌐 **Web Development** – From frontend interfaces to backend logic
+- 🤖 **AI & Automation** – Learning intelligent systems that assist and empower
 - 📚 **Lifelong Learning** – Staying curious and always growing
 
 ---
@@ -39,29 +39,29 @@ With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software d
 
 > **Experienced with a wide variety of tools and ecosystems:**
 
-- **Cyber & Linux Tools:** `nmap`, `wireshark`, `hydra`, `burpsuite`, `aircrack-ng`, `tmux`, `awk`, `htop`, `netstat`, `radare2`, `ghidra`, system logs, bash scripting  
-- **Web Dev Stack:** HTML, CSS, JavaScript, React, Node.js, REST APIs, JSON, Axios, Tailwind, Bootstrap, browser dev tools  
-- **Programming:** Strong in C++ (STL, iostream, fstream, algorithms), Python (requests, pandas, Flask), JavaScript (DOM, async, ES6)  
-- **Automation & Productivity:** Zapier, Make (Integromat), GitHub Actions, Notion, Trello, Google Apps Script  
-- **Communication & Workflow:** Slack, Discord, Zoom, Git CLI, GitHub Projects, Markdown, VS Code extensions  
+- **Cyber & Linux Tools:** `nmap`, `wireshark`, `hydra`, `burpsuite`, `aircrack-ng`, `tmux`, `awk`, `htop`, `netstat`, `radare2`, `ghidra`, system logs, bash scripting
+- **Web Dev Stack:** HTML, CSS, JavaScript, React, Node.js, REST APIs, JSON, Axios, Tailwind, Bootstrap, browser dev tools
+- **Programming:** Strong in C++ (STL, iostream, fstream, algorithms), Python (requests, pandas, Flask), JavaScript (DOM, async, ES6)
+- **Automation & Productivity:** Zapier, Make (Integromat), GitHub Actions, Notion, Trello, Google Apps Script
+- **Communication & Workflow:** Slack, Discord, Zoom, Git CLI, GitHub Projects, Markdown, VS Code extensions
 - **Linux Ecosystem:** Terminal-based workflows, package managers (apt, pacman), system control tools, dotfiles config
 
 ---
 
 ## 🌱 Currently Exploring
 
-- 🔎 Deepening knowledge in ethical tools & penetration testing  
-- 🧠 Working with intelligent systems and AI models  
-- 🌍 Building full-stack software that solves real-world needs  
-- 🧰 Improving terminal & Linux fluency  
+- 🔎 Deepening knowledge in ethical tools & penetration testing
+- 🧠 Working with intelligent systems and AI models
+- 🌍 Building full-stack software that solves real-world needs
+- 🧰 Improving terminal & Linux fluency
 - 🤝 Exploring tech with an Islamic mindset — grounded, ethical, and purposeful
 
 ---
 
 ## 📡 Let's Connect
 
-- 📧 Email: [md8.habibullah*****](mailto:md8.habibullah@gmail.com)  
-- 📘 Facebook: [facebook.com/md8.habibullah](https://www.facebook.com/md8.habibullah/)  
+- 📧 Email: [md8.habibullah*****](mailto:md8.habibullah@gmail.com)
+- 📘 Facebook: [facebook.com/md8.habibullah](https://www.facebook.com/md8.habibullah/)
 - 📸 Instagram: [instagram.com/md8.habibullah](https://www.instagram.com/md8.habibullah/)
 
 ---
