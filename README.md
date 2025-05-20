@@ -21,7 +21,7 @@ I'm **Habibullah** — a Computer Science & Engineering student on a journey to 
     width="400" height="150"
   />
   <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&layout=compact"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&layout=compact&theme=radical"
     alt="Top Languages"
     width="400" height="150"
   />
