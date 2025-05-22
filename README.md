@@ -2,13 +2,18 @@
 
 <!-- Crafted with niyyah, honesty, and a love for learning. Bismillah. -->
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:4ecdc4,100:ffe066&height=160&section=header&text=Habibullah%20🌌&fontSize=44&fontAlign=50&fontColor=ffffff" alt="header"/>
+</p>
+
 ---
 
 ## 🌌 About Me
 
 I'm **Habibullah** — a Computer Science & Engineering student on a journey to learn, build, and serve through technology. With a deep interest in **ethical hacking**, **Linux**, **AI**, and **software development**, I write every line of code with intention and faith.
 
-> *“Indeed, in the creation of the heavens and the earth… are signs for those who reflect.”*<br>**– Al-Qur'an (3:190)**
+> *“Indeed, in the creation of the heavens and the earth… are signs for those who reflect.”*  
+> **– Al-Qur'an (3:190)**
 
 ---
 
@@ -25,6 +30,8 @@ I'm **Habibullah** — a Computer Science & Engineering student on a journey to 
     alt="Top Languages"
     width="400" height="150"
   />
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=md8-habibullah&theme=radical&date_format=j%20M%5B%20Y%5D&background=23292f&ring=ffe066&fire=4ecdc4&currStreakLabel=ffe066" alt="GitHub Streak" width="420" height="120"/>
 </p>
 
 ---
@@ -54,16 +61,19 @@ I'm **Habibullah** — a Computer Science & Engineering student on a journey to 
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
 </p>
 
-> **Experienced with a wide variety of tools and ecosystems:**
->
-> | Category                   | Tools & Libraries                                                                                       |
-> |----------------------------|---------------------------------------------------------------------------------------------------------|
-> | **Cyber & Linux Tools**    | nmap · wireshark · hydra · burpsuite · aircrack‑ng · tmux · awk · htop · netstat · radare2 · ghidra        |
-> | **Web Dev Stack**          | HTML5 · CSS3 · React · Node.js · Express · REST APIs · JSON · Axios · Tailwind · Bootstrap               |
-> | **Programming**            | C++ (STL, algorithms) · Python (Flask, pandas) · JavaScript (ES6+)                                      |
-> | **Automation & CI/CD**     | GitHub Actions · Zapier · Make (Integromat) · Google Apps Script                                         |
-> | **Workflow & Collaboration** | Slack · Discord · Zoom · Git CLI · GitHub Projects · Markdown · VS Code extensions                       |
-> | **Linux Ecosystem**        | apt · pacman · dotfiles · shell scripting · systemctl · journald                                        |
+<details>
+  <summary><strong>Experienced with a wide variety of tools and ecosystems:</strong> (click to expand)</summary>
+
+| Category                   | Tools & Libraries                                                                                       |
+|----------------------------|---------------------------------------------------------------------------------------------------------|
+| **Cyber & Linux Tools**    | nmap · wireshark · hydra · burpsuite · aircrack‑ng · tmux · awk · htop · netstat · radare2 · ghidra     |
+| **Web Dev Stack**          | HTML5 · CSS3 · React · Node.js · Express · REST APIs · JSON · Axios · Tailwind · Bootstrap              |
+| **Programming**            | C++ (STL, algorithms) · Python (Flask, pandas) · JavaScript (ES6+)                                     |
+| **Automation & CI/CD**     | GitHub Actions · Zapier · Make (Integromat) · Google Apps Script                                       |
+| **Workflow & Collaboration** | Slack · Discord · Zoom · Git CLI · GitHub Projects · Markdown · VS Code extensions                    |
+| **Linux Ecosystem**        | apt · pacman · dotfiles · shell scripting · systemctl · journald                                       |
+
+</details>
 
 ---
 
@@ -79,11 +89,13 @@ I'm **Habibullah** — a Computer Science & Engineering student on a journey to 
 
 ## 📡 Let's Connect
 
-- 🐙 GitHub: [github.com/md8-habibullah](https://github.com/md8-habibullah)
-- 🌐 Portfolio: [md8-habibullah.github.io/md8-habibullah](https://md8-habibullah.github.io/md8-habibullah/)
-- 📧 Email: [md8.habibullah*****](mailto:md8.habibullah@gmail.com)
-- 📘 Facebook: [facebook.com/md8.habibullah](https://www.facebook.com/md8.habibullah/)
-- 📸 Instagram: [instagram.com/md8.habibullah](https://www.instagram.com/md8.habibullah/)
+<p align="center">
+  <a href="https://github.com/md8-habibullah"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/></a>
+  <a href="https://md8-habibullah.github.io/md8-habibullah/"><img src="https://img.shields.io/badge/Portfolio-6ee7b7?style=flat&logo=internet-explorer&logoColor=white"/></a>
+  <a href="mailto:md8.habibullah@gmail.com"><img src="https://img.shields.io/badge/Email-c14438?style=flat&logo=gmail&logoColor=white"/></a>
+  <a href="https://www.facebook.com/md8.habibullah/"><img src="https://img.shields.io/badge/Facebook-1877f2?style=flat&logo=facebook&logoColor=white"/></a>
+  <a href="https://www.instagram.com/md8.habibullah/"><img src="https://img.shields.io/badge/Instagram-e4405f?style=flat&logo=instagram&logoColor=white"/></a>
+</p>
 
 ---
 
