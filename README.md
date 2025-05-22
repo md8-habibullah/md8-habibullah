@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/md8-habibullah">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:2a2a3a&height=200§ion=header&text=HABIBULLAH%20🔎&fontSize=70&fontAlign=50&fontColor=ffffff&fontWeight=bold" alt="Header" />
+    <img src="https://capsule-render.vercel.app/api?type=transparent&color=0:1e1e2e,100:4d4dff&height=230&section=header&text=HABIBULLAH+🚀&fontSize=68&fontColor=ffffff&animation=fadeIn&desc=Computer+Science&descSize=18&descAlignY=75" alt="Header" />
   </a>
 </p>
 
@@ -12,7 +12,7 @@
 
 I’m **Habibullah**, a Computer Science & Engineering student passionate about leveraging technology to learn, build, and serve. With a focus on **ethical hacking**, **Linux**, **AI**, and **software development**, I code with intention, faith, and a commitment to excellence.
 
-> *“Indeed, in the creation of the heavens and the earth… are signs for those who reflect.”*  
+> _“Indeed, in the creation of the heavens and the earth… are signs for those who reflect.”_  
 > **– Al-Qur'an (3:190)**
 
 ---
@@ -58,24 +58,24 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ## Expanded Tools & Ecosystems
 
-| Category                   | Tools & Libraries                                                                                       |
-|----------------------------|---------------------------------------------------------------------------------------------------------|
-| **Cyber & Linux Tools**    | nmap · wireshark · burpsuite · tmux · htop · radare2 · ghidra                                           |
-| **Web Dev Stack**          | HTML5 · CSS3 · React · Node.js · Express · REST APIs · Tailwind                                          |
-| **Programming**            | Python (Flask) · JavaScript (ES6+) · C++ (STL)                                                          |
-| **Automation & CI/CD**     | GitHub Actions · Jenkins                                                                               |
-| **Workflow Tools**         | Slack · Git CLI · VS Code Extensions                                                                    |
-| **Linux Ecosystem**        | apt · shell scripting · systemctl                                                                       |
+| Category                | Tools & Libraries                                               |
+| ----------------------- | --------------------------------------------------------------- |
+| **Cyber & Linux Tools** | nmap · wireshark · burpsuite · tmux · htop · radare2 · ghidra   |
+| **Web Dev Stack**       | HTML5 · CSS3 · React · Node.js · Express · REST APIs · Tailwind |
+| **Programming**         | Python (Flask) · JavaScript (ES6+) · C++ (STL)                  |
+| **Automation & CI/CD**  | GitHub Actions · Jenkins                                        |
+| **Workflow Tools**      | Slack · Git CLI · VS Code Extensions                            |
+| **Linux Ecosystem**     | apt · shell scripting · systemctl                               |
 
 ---
 
 ## 🌱 Currently Exploring
 
-- 🔎 **Ethical Hacking** – Deepening penetration testing skills  
-- 🧠 **AI & Intelligent Systems** – Experimenting with AI models  
-- 🌍 **Full-Stack Development** – Building impactful software  
-- 🧰 **Linux Mastery** – Enhancing terminal efficiency  
-- 🤝 **Islamic Tech Mindset** – Integrating ethics and purpose  
+- 🔎 **Ethical Hacking** – Deepening penetration testing skills
+- 🧠 **AI & Intelligent Systems** – Experimenting with AI models
+- 🌍 **Full-Stack Development** – Building impactful software
+- 🧰 **Linux Mastery** – Enhancing terminal efficiency
+- 🤝 **Islamic Tech Mindset** – Integrating ethics and purpose
 
 ---
 
@@ -94,8 +94,8 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ## ✨ Fun Fact
 
-> *I’m naturally calm but come alive with Linux, coding, or deep conversations. Picture me with a dark terminal, a cup of tea, and Qur’an recitation in the background — that’s my happy place!*
+> _I’m naturally calm but come alive with Linux, coding, or deep conversations. Picture me with a dark terminal, a cup of tea, and Qur’an recitation in the background — that’s my happy place!_
 
 ---
 
-*Crafted with niyyah, honesty, and a love for learning. Bismillah. (Last updated: May, 2025)*
+_Crafted with niyyah, honesty, and a love for learning. Bismillah. (Last updated: May, 2025)_
