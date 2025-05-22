@@ -85,8 +85,6 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
   <a href="https://github.com/md8-habibullah"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=60a5fa" alt="GitHub" /></a>
   <a href="mailto:md8.habibullah@gmail.com"><img src="https://img.shields.io/badge/Email-c14438?style=for-the-badge&logo=gmail&logoColor=60a5fa" alt="Email" /></a>
   <a href="https://md8-habibullah.github.io/md8-habibullah/"><img src="https://img.shields.io/badge/Portfolio-3b82f6?style=for-the-badge&logo=internet-explorer&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.facebook.com/md8.habibullah/"><img src="https://img.shields.io/badge/Facebook-1877f2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
-  <a href="https://www.instagram.com/md8.habibullah/"><img src="https://img.shields.io/badge/Instagram-e4405f?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
   <a href="#"><img src="https://img.shields.io/badge/LinkedIn-Coming%20Soon-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn (coming soon)" /></a>
 </p>
 
