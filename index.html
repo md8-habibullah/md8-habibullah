@@ -1,128 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Habibullah – CSE Student & Tech Explorer</title>
-  <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/149287500" />
-  <meta name="description" content="Habibullah – CSE Student & Tech Explorer. Interests: Ethical Hacking, Linux, AI, Software Development." />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <canvas id="bg-stars"></canvas>
-  <button id="theme-toggle" title="Switch Day/Night Theme"><span id="theme-icon">🌞</span></button>
-  <div id="level-popup" class="level-popup"></div>
-  <main id="game-main">
-    <header class="hero" id="hero">
-      <h1 class="animated-title">
-        <span class="icon-title" role="img" aria-label="Laptop">💻</span>
-        Hey, I'm <span class="highlight">Habibullah</span>
-      </h1>
-      <div class="subtitle">CSE Student & Tech Explorer</div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habibullah – Portfolio</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://avatars.githubusercontent.com/u/149287500"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Habibullah – Fullstack Software Developer, CSE Student, Ethical Hacker, Linux Enthusiast, and AI Explorer."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
-    <section class="section about" data-section="1">
-      <h2><span class="section-title" aria-label="About">📘</span> About Me</h2>
-      <p>
-        I'm Habibullah — a Computer Science &amp; Engineering student on a journey to learn, build, and serve through technology.<br>
-        With a deep interest in <span class="bold">ethical hacking, Linux, AI, and software development</span>, I approach my work with intention and faith.
-      </p>
-      <blockquote class="quote">
-        “Indeed, in the creation of the heavens and the earth... are signs for those who reflect.”<br>
-        <strong>– Al-Qur'an (3:190)</strong>
-      </blockquote>
-    </section>
+      :root {
+        --bg-primary: #1e1e2e;
+        --bg-secondary: #2a2a3a;
+        --text-primary: #e2e8f0;
+        --text-accent: #60a5fa;
+        --accent: #3b82f6;
+        --accent-hover: #2563eb;
+        --card-bg: rgba(30, 30, 46, 0.9);
+        --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        --transition: all 0.3s ease;
+      }
 
-    <section class="section" data-section="2">
-      <h2><span class="section-title" aria-label="Brain">🧠</span> Interests</h2>
-      <ul class="interest-list">
-        <li class="emoji-li"><span aria-label="Lock">🪪</span> <span class="bold">Ethical Hacking</span> – Exploring vulnerabilities responsibly</li>
-        <li class="emoji-li"><span aria-label="Linux">🖥️</span> <span class="bold">Linux & Terminal Tools</span> – Love open-source systems</li>
-        <li class="emoji-li"><span aria-label="Software">💻</span> <span class="bold">Software & App Dev</span> – Creating helpful apps</li>
-        <li class="emoji-li"><span aria-label="Web">🌐</span> <span class="bold">Web Development</span> – Frontend to backend</li>
-        <li class="emoji-li"><span aria-label="AI">🤖</span> <span class="bold">AI & Automation</span> – Intelligent systems</li>
-        <li class="emoji-li"><span aria-label="Book">📚</span> <span class="bold">Lifelong Learning</span> – Always growing</li>
-      </ul>
-    </section>
+      html {
+        scroll-behavior: smooth;
+      }
 
-    <section class="section" data-section="3">
-      <h2><span class="section-title" aria-label="Tools">🛠️</span> Tools &amp; Technologies</h2>
-      <div class="badges">
-        <img src="https://img.shields.io/badge/Linux-000?style=for-the-badge&logo=linux&logoColor=white" alt="Linux"/>
-        <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash"/>
-        <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-        <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-        <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-        <img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-        <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-        <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
-      </div>
-      <ul class="tools-list">
-        <li><strong>Cyber &amp; Linux Tools:</strong> <code>nmap</code>, <code>wireshark</code>, <code>hydra</code>, <code>burpsuite</code>, <code>aircrack-ng</code>, <code>tmux</code>, <code>awk</code>, <code>htop</code>, <code>netstat</code>, <code>radare2</code>, <code>ghidra</code></li>
-        <li><strong>Web Dev Stack:</strong> HTML, CSS, JavaScript, React, Node.js, REST APIs, JSON, Axios, Tailwind, Bootstrap</li>
-        <li><strong>Programming:</strong> C++, Python, JavaScript</li>
-        <li><strong>Automation &amp; Productivity:</strong> GitHub Actions, Notion, Trello, Google Apps Script</li>
-        <li><strong>Workflow:</strong> Git CLI, Projects, Markdown, VS Code</li>
-        <li><strong>Linux Ecosystem:</strong> Terminal-based workflows, package managers, dotfiles config</li>
-      </ul>
-    </section>
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(
+          135deg,
+          var(--bg-primary) 0%,
+          var(--bg-secondary) 100%
+        );
+        color: var(--text-primary);
+        min-height: 100vh;
+        margin: 0;
+        line-height: 1.6;
+      }
 
-    <section class="section" data-section="4">
-      <h2><span class="section-title" aria-label="Seedling">🌱</span> Currently Exploring</h2>
-      <ul>
-        <li>🔎 Deepening knowledge in ethical tools &amp; penetration testing</li>
-        <li>🧠 Working with intelligent systems and AI models</li>
-        <li>🌍 Building full-stack software that solves real-world needs</li>
-        <li>🧰 Improving terminal &amp; Linux fluency</li>
-        <li>🤝 Exploring tech with an Islamic mindset</li>
-      </ul>
-    </section>
+      .glass {
+        background: var(--card-bg);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        backdrop-filter: blur(8px);
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
 
-    <section class="section" data-section="5">
-      <h2><span class="section-title" aria-label="Antenna">📡</span> Let's Connect</h2>
-      <ul class="contact-list">
-        <li>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="20" height="20"/>
-          <strong>GitHub:</strong>
-          <a href="https://github.com/md8-habibullah" target="_blank" rel="noopener">github.com/md8-habibullah</a>
-        </li>
-        <li>
-          <img src="https://img.icons8.com/ios-filled/50/6ee7b7/domain.png" alt="Portfolio" width="20" height="20"/>
-          <strong>Portfolio:</strong>
-          <a href="https://md8-habibullah.github.io/md8-habibullah/" target="_blank" rel="noopener">md8-habibullah.github.io/md8-habibullah/</a>
-        </li>
-        <li>
-          📧 <strong>Email:</strong>
-          <a href="mailto:md8.habibullah@gmail.com">md8.habibullah*****</a>
-        </li>
-        <li>
-          📘 <strong>Facebook:</strong>
-          <a href="https://www.facebook.com/md8.habibullah/" target="_blank" rel="noopener">facebook.com/md8.habibullah</a>
-        </li>
-        <li>
-          📸 <strong>Instagram:</strong>
-          <a href="https://www.instagram.com/md8.habibullah/" target="_blank" rel="noopener">instagram.com/md8.habibullah</a>
-        </li>
-      </ul>
-    </section>
+      .card-3d {
+        transform-style: preserve-3d;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
 
-    <section class="section" data-section="6">
-      <h2><span class="section-title" aria-label="Sparkles">✨</span> Fun Fact</h2>
-      <div class="fun-fact">
-        I'm a calm person, but I light up when it comes to Linux, code, or deep topics.<br>
-        A dark theme, the terminal open, tea on the side, and some Qur'an recitation in the background — that’s my zone.
-      </div>
-    </section>
-    <footer class="footer">
-      Crafted with niyyah, honesty, and a love for learning. Bismillah.
-    </footer>
-  </main>
-  <div id="cursor-arrow"></div>
-  <button id="go-top-btn" title="Go to top" aria-label="Go to top">
-    <svg viewBox="0 0 32 32"><path d="M16 7v18M16 7l-8 8M16 7l8 8" fill="none" stroke="#ffe066" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-  </button>
-  <audio id="pop-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_11e1b3e7b8.mp3"></audio>
-  <script src="script.js"></script>
-</body>
+      .card-3d:hover {
+        transform: perspective(1000px) rotateX(5deg) rotateY(5deg)
+          translateZ(10px);
+        box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+      }
+
+      .card-3d:hover::after {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        transform: translateZ(-1px);
+        background: inherit;
+        filter: blur(10px);
+        opacity: 0.3;
+        z-index: -1;
+      }
+
+      .card-3d:active {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0);
+      }
+
+      .pulse {
+        animation: pulse 2s infinite ease-in-out;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          text-shadow: 0 0 8px var(--text-accent);
+        }
+        50% {
+          text-shadow: 0 0 12px var(--text-accent),
+            0 0 16px rgba(59, 130, 246, 0.5);
+        }
+      }
+
+      .emoji-divider {
+        font-size: 1.5rem;
+        text-align: center;
+        color: var(--text-accent);
+        margin: 2rem 0;
+        opacity: 0.8;
+      }
+
+      .avatar {
+        border: 4px solid var(--accent);
+        border-radius: 50%;
+        transition: var(--transition);
+      }
+
+      .avatar:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+      }
+
+      .tool-icon {
+        width: 28px;
+        height: 28px;
+        transition: var(--transition);
+      }
+
+      .tool-icon:hover {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+      }
+
+      ::selection {
+        background: var(--text-accent);
+        color: var(--bg-primary);
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+        background: var(--bg-secondary);
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--accent);
+        border-radius: 3px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .card-3d,
+        .avatar,
+        .tool-icon,
+        .pulse {
+          transition: none;
+          animation: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+        }
+        .emoji-divider {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="py-6 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <!-- Header Section -->
+      <header class="flex flex-col items-center mb-12">
+        <img
+          src="https://avatars.githubusercontent.com/u/149287500"
+          alt="Habibullah"
+          class="avatar w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover"
+          loading="lazy"
+        />
+        <h1
+          class="pulse text-3xl sm:text-4xl md:text-5xl font-bold mt-4 text-center"
+        >
+          HABIBULLAH
+        </h1>
+        <h2
+          class="text-lg sm:text-xl md:text-2xl text-[#93c5fd] font-semibold mt-2 text-center"
+        >
+          Fullstack Software Developer · CSE Student
+        </h2>
+        <p class="text-base sm:text-lg text-[#cbd5e1] mt-1 text-center">
+          Ethical Hacker • Linux Enthusiast • AI Explorer
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-2">
+          <span
+            class="px-3 py-1 bg-[#2d3748] text-[#93c5fd] text-sm font-medium rounded-lg"
+          >
+            Software Engineer
+          </span>
+          <span
+            class="px-3 py-1 bg-[#2d3748] text-[#93c5fd] text-sm font-medium rounded-lg"
+          >
+            Fullstack Developer
+          </span>
+          <span
+            class="px-3 py-1 bg-[#2d3748] text-[#93c5fd] text-sm font-medium rounded-lg"
+          >
+            Open Source
+          </span>
+        </div>
+      </header>
+
+      <div class="emoji-divider">✧ ✦ ✧</div>
+
+      <!-- About Section -->
+      <section class="glass card-3d p-6 mb-8">
+        <h2
+          class="text-2xl font-bold text-[#93c5fd] mb-4 flex items-center gap-2"
+        >
+          <span>📘</span> About Me
+        </h2>
+        <p class="text-base text-[#cbd5e1] mb-4">
+          I'm Habibullah, a passionate <b>fullstack software developer</b> and
+          <b>CSE student</b> focused on building secure, efficient solutions.
+          From web and mobile apps to automation scripts, I blend creativity
+          with a security-first mindset.
+        </p>
+        <blockquote
+          class="bg-[#2d3748] border-l-4 border-[#93c5fd] pl-4 py-3 my-4 italic text-[#93c5fd] rounded-r-lg"
+        >
+          “Indeed, in the creation of the heavens and the earth... are signs for
+          those who reflect.”<br />
+          <strong>– Al-Qur'an (3:190)</strong>
+        </blockquote>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-[#2d3748] p-4 rounded-lg">
+            <h3 class="font-semibold text-[#93c5fd] mb-1">Education</h3>
+            <p class="text-[#cbd5e1] text-sm">
+              B.Sc in Computer Science & Engineering
+            </p>
+            <p class="text-xs text-[#94a3b8]">Expected Graduation: 2025</p>
+          </div>
+          <div class="bg-[#2d3748] p-4 rounded-lg">
+            <h3 class="font-semibold text-[#93c5fd] mb-1">Specialties</h3>
+            <p class="text-[#cbd5e1] text-sm">
+              Fullstack Dev, Cybersecurity, Linux, AI
+            </p>
+          </div>
+          <div class="bg-[#2d3748] p-4 rounded-lg">
+            <h3 class="font-semibold text-[#93c5fd] mb-1">Philosophy</h3>
+            <p class="text-[#cbd5e1] text-sm">
+              Code with purpose and curiosity
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="glass card-3d p-6 mb-8">
+        <h2
+          class="text-2xl font-bold text-[#93c5fd] mb-4 flex items-center gap-2"
+        >
+          <span>🛠️</span> Technical Skills
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-3">
+              Core Competencies
+            </h3>
+            <ul class="space-y-2 text-[#cbd5e1] text-sm">
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Fullstack Development
+                (React, Node.js, Python)
+              </li>
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Linux & Automation
+              </li>
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Ethical Hacking
+              </li>
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Data Structures &
+                Algorithms
+              </li>
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>AI & Machine Learning
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-3">
+              Tech Stack & Tools
+            </h3>
+            <div class="flex flex-wrap gap-3 mb-4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                alt="Linux"
+                class="tool-icon"
+                title="Linux"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                class="tool-icon"
+                title="Python"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="tool-icon"
+                title="JavaScript"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                class="tool-icon"
+                title="React"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="Node.js"
+                class="tool-icon"
+                title="Node.js"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                alt="Docker"
+                class="tool-icon"
+                title="Docker"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                alt="Git"
+                class="tool-icon"
+                title="Git"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                alt="AWS"
+                class="tool-icon"
+                title="AWS"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                alt="Kubernetes"
+                class="tool-icon"
+                title="Kubernetes"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                alt="MongoDB"
+                class="tool-icon"
+                title="MongoDB"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL"
+                class="tool-icon"
+                title="PostgreSQL"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                alt="Figma"
+                class="tool-icon"
+                title="Figma"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="TypeScript"
+                class="tool-icon"
+                title="TypeScript"
+                loading="lazy"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+                alt="GraphQL"
+                class="tool-icon"
+                title="GraphQL"
+                loading="lazy"
+              />
+            </div>
+            <h4 class="font-medium text-[#93c5fd] mb-2">Additional Tools</h4>
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="bg-[#2d3748] px-2 py-1 rounded-full">nmap</span>
+              <span class="bg-[#2d3748] px-2 py-1 rounded-full">Wireshark</span>
+              <span class="bg-[#2d3748] px-2 py-1 rounded-full"
+                >Burp Suite</span
+              >
+              <span class="bg-[#2d3748] px-2 py-1 rounded-full"
+                >GitHub Actions</span
+              >
+              <span class="bg-[#2d3748] px-2 py-1 rounded-full">Jenkins</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Focus Areas Section -->
+      <section class="glass card-3d p-6 mb-8">
+        <h2
+          class="text-2xl font-bold text-[#93c5fd] mb-4 flex items-center gap-2"
+        >
+          <span>🌱</span> Current Focus Areas
+        </h2>
+        <div class="space-y-4">
+          <div class="p-4 bg-[#2d3748] rounded-lg">
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-1">
+              Secure Fullstack Development
+            </h3>
+            <p class="text-[#cbd5e1] text-sm">
+              Building secure, scalable web and mobile apps with modern
+              frameworks.
+            </p>
+          </div>
+          <div class="p-4 bg-[#2d3748] rounded-lg">
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-1">
+              Ethical Hacking
+            </h3>
+            <p class="text-[#cbd5e1] text-sm">
+              Penetration testing and vulnerability research for robust
+              security.
+            </p>
+          </div>
+          <div class="p-4 bg-[#2d3748] rounded-lg">
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-1">
+              AI & Automation
+            </h3>
+            <p class="text-[#cbd5e1] text-sm">
+              Leveraging AI for smart automation and workflow optimization.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="glass card-3d p-6 mb-8">
+        <h2
+          class="text-2xl font-bold text-[#93c5fd] mb-4 flex items-center gap-2"
+        >
+          <span>📡</span> Get In Touch
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-3">
+              Connect With Me
+            </h3>
+            <ul class="space-y-2 text-sm">
+              <li class="flex items-center gap-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  class="w-5 h-5"
+                  loading="lazy"
+                />
+                <a
+                  href="https://github.com/md8-habibullah"
+                  class="text-[#cbd5e1] hover:text-[#93c5fd] transition"
+                  >github.com/md8-habibullah</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#cbd5e1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"
+                  />
+                </svg>
+                <a
+                  href="mailto:md8.habibullah@gmail.com"
+                  class="text-[#cbd5e1] hover:text-[#93c5fd] transition"
+                  >md8.habibullah*****</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <img
+                  src="https://img.icons8.com/ios-filled/24/93c5fd/domain.png"
+                  alt="Portfolio"
+                  class="w-5 h-5"
+                  loading="lazy"
+                />
+                <a
+                  href="https://md8-habibullah.github.io/md8-habibullah/"
+                  class="text-[#cbd5e1] hover:text-[#93c5fd] transition"
+                  >Portfolio Site</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#cbd5e1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.85c-.148 3.252-1.691 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.849-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.266-.07-1.644-.07-4.85s.012-3.584.07-4.849c.148-3.252 1.691-4.771 4.919-4.919 1.265-.058 1.645-.07 4.849-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.058 1.281-.072 1.689-.072 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.058-1.281.072-1.689.072-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.058-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z"
+                  />
+                </svg>
+                <a
+                  href="https://www.instagram.com/md8.habibullah/"
+                  class="text-[#cbd5e1] hover:text-[#93c5fd] transition"
+                  >Instagram</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#cbd5e1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.294h6.116c.732 0 1.325-.593 1.325-1.324v-21.351c0-.732-.593-1.325-1.325-1.325z"
+                  />
+                </svg>
+                <a
+                  href="https://www.facebook.com/md8.habibullah/"
+                  class="text-[#cbd5e1] hover:text-[#93c5fd] transition"
+                  >Facebook</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="#cbd5e1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+                <a
+                  href="#"
+                  class="text-[#cbd5e1] hover:text-[#93c5fd] transition"
+                  >LinkedIn (Coming Soon)</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-[#93c5fd] mb-3">
+              Availability
+            </h3>
+            <ul class="space-y-2 text-sm text-[#cbd5e1]">
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Fullstack Projects
+              </li>
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Security Research
+              </li>
+              <li class="flex">
+                <span class="text-[#93c5fd] mr-2">•</span>Technical Writing
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="text-center text-[#94a3b8] text-sm mt-8">
+        <p>© 2025 Habibullah. Built with code and curiosity.</p>
+      </footer>
+    </div>
+
+    <script>
+      // Simple hover effect for cards
+      document.querySelectorAll(".card-3d").forEach((card) => {
+        card.addEventListener("mouseenter", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          card.style.transform = `perspective(1000px) rotateX(${
+            y / 20
+          }deg) rotateY(${x / 20}deg) translateZ(10px)`;
+        });
+        card.addEventListener("mouseleave", () => {
+          card.style.transform =
+            "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0)";
+        });
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          card.style.transform = `perspective(1000px) rotateX(${
+            y / 20
+          }deg) rotateY(${x / 20}deg) translateZ(10px)`;
+        });
+      });
+
+      // Floating emoji effect on double click
+      const emojis = ["✨", "🤖", "🚀", "🌟"];
+      document.addEventListener("dblclick", (e) => {
+        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+        const el = document.createElement("div");
+        el.textContent = emoji;
+        el.style.position = "fixed";
+        el.style.left = `${e.clientX - 15}px`;
+        el.style.top = `${e.clientY - 15}px`;
+        el.style.transition = "all 0.8s ease";
+        el.style.zIndex = "1000";
+        document.body.appendChild(el);
+        setTimeout(() => {
+          el.style.transform = "translateY(-100px) scale(1.2)";
+          el.style.opacity = "0";
+        }, 10);
+        setTimeout(() => el.remove(), 800);
+      });
+    </script>
+  </body>
 </html>
