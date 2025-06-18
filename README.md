@@ -19,12 +19,20 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ## 📊 GitHub Stats
 
-<p align="center">
-  <a href="https://github.com/md8-habibullah">
-    <img src="https://github-readme-stats.vercel.app/api?username=md8-habibullah&show_icons=true&theme=dracula&hide_border=true" alt="GitHub Stats" width="47%" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&layout=compact&theme=dracula&hide_border=true" alt="Top Languages" width="47%" />
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td width="50%">
+      <a href="https://github.com/md8-habibullah">
+        <img src="https://github-readme-stats.vercel.app/api?username=md8-habibullah&show_icons=true&theme=dracula&hide_border=true" alt="GitHub Stats" width="100%" />
+      </a>
+    </td>
+    <td width="50%">
+      <a href="https://github.com/md8-habibullah">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&theme=dracula&hide_border=true" alt="Top Languages" width="100%" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 

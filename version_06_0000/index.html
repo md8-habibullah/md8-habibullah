@@ -56,16 +56,29 @@
       }
 
       .card-3d {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform-style: preserve-3d;
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
 
       .card-3d:hover {
-        transform: scale(1.02) translateY(-5px);
-        box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+        transform: perspective(1000px) rotateX(5deg) rotateY(5deg)
+          translateZ(10px);
+        box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
+      }
+
+      .card-3d:hover::after {
+        content: "";
+        position: absolute;
+        inset: -5px;
+        transform: translateZ(-1px);
+        background: inherit;
+        filter: blur(10px);
+        opacity: 0.3;
+        z-index: -1;
       }
 
       .card-3d:active {
-        transform: scale(1) translateY(0);
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0);
       }
 
       .pulse {
