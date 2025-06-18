@@ -24,10 +24,6 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
     <img src="https://github-readme-stats.vercel.app/api?username=md8-habibullah&show_icons=true&theme=dracula&hide_border=true" alt="GitHub Stats" width="47%" />
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&layout=compact&theme=dracula&hide_border=true" alt="Top Languages" width="47%" />
   </a>
-  <br>
-  <a href="https://github.com/md8-habibullah">
-    <img src="https://github-readme-streak-stats.herokuapp.com?user=md8-habibullah&theme=dracula&date_format=j%20M%5B%20Y%5D&background=1e1e2e&ring=3b82f6&fire=60a5fa&currStreakLabel=3b82f6" alt="GitHub Streak" width="98%" />
-  </a>
 </p>
 
 ---
