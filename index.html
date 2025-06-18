@@ -141,14 +141,6 @@
         border-radius: 3px;
       }
 
-      iframe {
-        width: 100%;
-        border: none;
-        border-radius: 1rem;
-        background: var(--card-bg);
-        padding: 0.5rem;
-      }
-
       @media (prefers-reduced-motion: reduce) {
         .card-3d,
         .avatar,
@@ -168,9 +160,6 @@
         }
         .emoji-divider {
           font-size: 1.25rem;
-        }
-        iframe {
-          height: 600px;
         }
       }
     </style>
@@ -557,18 +546,63 @@
         <p class="text-base text-[#cbd5e1] mb-4">
           Have a question or want to collaborate? Fill out the form below!
         </p>
-        <div class="w-full">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdOrrVgtW1BWsfwEJ3P-qIXqP89493crMrdLfiRInglNAkdMg/viewform?embedded=true"
-            width="100%"
-            height="800"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
+        <form
+          action="https://formspree.io/f/myzjpdro"
+          method="POST"
+          class="space-y-4"
+        >
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-[#93c5fd] mb-1"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-3 py-2 bg-[#2d3748] text-[#e2e8f0] border border-[#93c5fd] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#60a5fa] transition"
+              placeholder="Your Name"
+            />
+          </div>
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-[#93c5fd] mb-1"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-3 py-2 bg-[#2d3748] text-[#e2e8f0] border border-[#93c5fd] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#60a5fa] transition"
+              placeholder="your.email@example.com"
+            />
+          </div>
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-medium text-[#93c5fd] mb-1"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              class="w-full px-3 py-2 bg-[#2d3748] text-[#e2e8f0] border border-[#93c5fd] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#60a5fa] transition"
+              placeholder="Your message here..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="px-4 py-2 bg-[#3b82f6] text-[#e2e8f0] rounded-lg hover:bg-[#2563eb] transition"
           >
-            Loading…
-          </iframe>
-        </div>
+            Send Message
+          </button>
+        </form>
       </section>
 
       <!-- Footer -->
