@@ -141,6 +141,14 @@
         border-radius: 3px;
       }
 
+      iframe {
+        width: 100%;
+        border: none;
+        border-radius: 1rem;
+        background: var(--card-bg);
+        padding: 0.5rem;
+      }
+
       @media (prefers-reduced-motion: reduce) {
         .card-3d,
         .avatar,
@@ -160,6 +168,9 @@
         }
         .emoji-divider {
           font-size: 1.25rem;
+        }
+        iframe {
+          height: 600px;
         }
       }
     </style>
@@ -536,55 +547,34 @@
         </div>
       </section>
 
+      <!-- Contact Form Section -->
+      <section class="glass card-3d p-6 mb-8">
+        <h2
+          class="text-2xl font-bold text-[#93c5fd] mb-4 flex items-center gap-2"
+        >
+          <span>📬</span> Contact Form
+        </h2>
+        <p class="text-base text-[#cbd5e1] mb-4">
+          Have a question or want to collaborate? Fill out the form below!
+        </p>
+        <div class="w-full">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdOrrVgtW1BWsfwEJ3P-qIXqP89493crMrdLfiRInglNAkdMg/viewform?embedded=true"
+            width="100%"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          >
+            Loading…
+          </iframe>
+        </div>
+      </section>
+
       <!-- Footer -->
       <footer class="text-center text-[#94a3b8] text-sm mt-8">
         <p>© 2025 Habibullah. Built with code and curiosity.</p>
       </footer>
     </div>
-
-    <script>
-      // Simple hover effect for cards
-      document.querySelectorAll(".card-3d").forEach((card) => {
-        card.addEventListener("mouseenter", (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left - rect.width / 2;
-          const y = e.clientY - rect.top - rect.height / 2;
-          card.style.transform = `perspective(1000px) rotateX(${
-            y / 20
-          }deg) rotateY(${x / 20}deg) translateZ(10px)`;
-        });
-        card.addEventListener("mouseleave", () => {
-          card.style.transform =
-            "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0)";
-        });
-        card.addEventListener("mousemove", (e) => {
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left - rect.width / 2;
-          const y = e.clientY - rect.top - rect.height / 2;
-          card.style.transform = `perspective(1000px) rotateX(${
-            y / 20
-          }deg) rotateY(${x / 20}deg) translateZ(10px)`;
-        });
-      });
-
-      // Floating emoji effect on double click
-      const emojis = ["🔥", "🔎", "🔭", "🚀", "🌟", "☕", "✨"];
-      document.addEventListener("dblclick", (e) => {
-        const emoji = emojis[Math.floor(Math.random() * emojis.length)];
-        const el = document.createElement("div");
-        el.textContent = emoji;
-        el.style.position = "fixed";
-        el.style.left = `${e.clientX - 15}px`;
-        el.style.top = `${e.clientY - 15}px`;
-        el.style.transition = "all 0.8s ease";
-        el.style.zIndex = "1000";
-        document.body.appendChild(el);
-        setTimeout(() => {
-          el.style.transform = "translateY(-100px) scale(1.2)";
-          el.style.opacity = "0";
-        }, 10);
-        setTimeout(() => el.remove(), 800);
-      });
-    </script>
   </body>
 </html>
