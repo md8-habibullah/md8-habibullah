@@ -538,19 +538,22 @@
           name="contact"
           method="POST"
           data-netlify="true"
+          netlify-honeypot="bot-field"
           action="/thank-you"
         >
-          <!-- Hidden input for Netlify form handling -->
+          <!-- Netlify Hidden Input -->
           <input type="hidden" name="form-name" value="contact" />
 
-          <!-- Honeypot (anti-spam) -->
-          <p class="hidden">
-            <label
-              >Don’t fill this out if you're human: <input name="bot-field"
-            /></label>
-          </p>
+          <!-- Honeypot Field -->
+          <div class="hidden">
+            <label>
+              Don’t fill this out if you're human:
+              <input name="bot-field" />
+            </label>
+          </div>
 
-          <div>
+          <!-- Name Field -->
+          <div class="mb-4">
             <label
               for="name"
               class="block text-sm font-medium text-[#93c5fd] mb-1"
@@ -566,7 +569,8 @@
             />
           </div>
 
-          <div>
+          <!-- Email Field -->
+          <div class="mb-4">
             <label
               for="email"
               class="block text-sm font-medium text-[#93c5fd] mb-1"
@@ -582,7 +586,8 @@
             />
           </div>
 
-          <div>
+          <!-- Message Field -->
+          <div class="mb-4">
             <label
               for="message"
               class="block text-sm font-medium text-[#93c5fd] mb-1"
@@ -598,12 +603,19 @@
             ></textarea>
           </div>
 
+          <!-- Submit Button -->
           <button
             type="submit"
-            class="px-4 py-2 bg-[#3b82f6] text-[#e2e8f0] rounded-lg hover:bg-[#2563eb] transition"
+            class="px-6 py-2 bg-[#3b82f6] rounded-full text-white hover:bg-[#2563eb] transition"
           >
             Send Message
           </button>
+
+          <!-- Spam Note -->
+          <p class="mt-2 text-xs text-[#f87171]">
+            ⚠️ Fake or spam submissions may be filtered out. Please ensure your
+            message is genuine.
+          </p>
         </form>
       </section>
 
