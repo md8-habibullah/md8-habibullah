@@ -603,14 +603,20 @@
           Have a question or want to collaborate? Fill out the form below!
         </p>
 
-        <form
+        <!-- <form
           name="contact"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
           class="space-y-4"
-        >
+        > -->
 
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you"
+        >
           <!-- Hidden input for Netlify form handling -->
           <input type="hidden" name="form-name" value="contact" />
 
@@ -685,17 +691,4 @@
     </div>
   </body>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.querySelector("form[name='contact']");
-      if (!form) return;
-
-      form.addEventListener("submit", function () {
-        // Delay page reload slightly so Netlify captures submission
-        setTimeout(() => {
-          window.location.reload();
-        }, 100); // 100ms delay after submit
-      });
-    });
-  </script>
 </html>
