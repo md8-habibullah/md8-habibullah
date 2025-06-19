@@ -603,12 +603,19 @@
           Have a question or want to collaborate? Fill out the form below!
         </p>
 
-        <form
+        <!-- <form
           name="contact"
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
           class="space-y-4"
+        > -->
+
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you"
         >
           <!-- Hidden input for Netlify form handling -->
           <input type="hidden" name="form-name" value="contact" />
