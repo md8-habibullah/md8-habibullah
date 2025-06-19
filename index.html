@@ -683,4 +683,18 @@
       </footer>
     </div>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form[name='contact']");
+      if (!form) return;
+
+      form.addEventListener("submit", function () {
+        // Delay page reload slightly so Netlify captures submission
+        setTimeout(() => {
+          window.location.reload();
+        }, 100); // 100ms delay after submit
+      });
+    });
+  </script>
 </html>
