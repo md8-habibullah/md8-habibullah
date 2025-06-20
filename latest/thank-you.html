@@ -3,6 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://md8-habibullah.netlify.app/" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Portfolio of Habibullah – Fullstack Software Developer, CSE Student, Ethical Hacker, Linux Enthusiast, and AI Explorer."
+    />
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <meta
+      name="keywords"
+      content="MD Habibullah Sharif, ethical hacking, Linux, developer, GitHub, portfolio, React, NodeJS"
+    />
+    <meta name="author" content="MD Habibullah Sharif" />
+
+    <!-- Open Graph (Facebook, Discord, LinkedIn) -->
+    <meta
+      property="og:title"
+      content="MD Habibullah Sharif | Ethical Hacker & Dev"
+    />
+    <meta
+      property="og:description"
+      content="Check out my latest projects and open-source work!"
+    />
+    <meta
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/149287500"
+    />
+    <meta property="og:url" content="https://md8-habibullah.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="MD Habibullah Sharif's Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:alt" content="MD Habibullah Sharif's Portfolio" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:image:secure_url"
+      content="https://avatars.githubusercontent.com/u/149287500"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MD Habibullah Sharif | Dev Portfolio" />
+    <meta
+      name="twitter:description"
+      content="My personal developer portfolio."
+    />
+
+    <!-- JSON-LD Schema (Optional but SEO Boosting) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "MD Habibullah Sharif",
+        "url": "https://md8-habibullah.netlify.app/",
+        "description": "Fullstack Software Developer, CSE Student, Ethical Hacker, Linux Enthusiast, and AI Explorer.",
+        "email": "md8.habibullah@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Bangladesh"
+        },
+        "image": "https://avatars.githubusercontent.com/u/149287500",
+        "sameAs": [
+          "https://github.com/md8-habibullah",
+          "https://facebook.com/md8.habibullah"
+        ],
+        "jobTitle": "Ethical Hacker & Full Stack Developer",
+        "alumniOf": "Northern University Bangladesh",
+        "knowsAbout": ["Linux", "Web Security", "React", "Docker", "Node.js"]
+      }
+    </script>
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <title>Thank You!</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
@@ -23,7 +95,11 @@
 
       body {
         font-family: "Inter", sans-serif;
-        background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+        background: linear-gradient(
+          135deg,
+          var(--bg-primary),
+          var(--bg-secondary)
+        );
         color: var(--text-primary);
       }
 
@@ -41,11 +117,13 @@
       }
 
       @keyframes pulse {
-        0%, 100% {
+        0%,
+        100% {
           text-shadow: 0 0 8px var(--text-accent);
         }
         50% {
-          text-shadow: 0 0 12px var(--text-accent), 0 0 16px rgba(59, 130, 246, 0.5);
+          text-shadow: 0 0 12px var(--text-accent),
+            0 0 16px rgba(59, 130, 246, 0.5);
         }
       }
     </style>
@@ -53,16 +131,36 @@
   <body class="min-h-screen flex items-center justify-center px-4 py-12">
     <div class="max-w-md w-full glass text-center p-8">
       <div id="emoji" class="text-6xl mb-4 pulse">🎉</div>
-      <h1 class="text-4xl sm:text-5xl font-bold text-[#93c5fd] mb-3">Thank You!</h1>
+      <h1 class="text-4xl sm:text-5xl font-bold text-[#93c5fd] mb-3">
+        Thank You!
+      </h1>
       <p class="text-[#cbd5e1] text-base sm:text-lg mb-6">
         Your message has been sent successfully.<br />I'll get back to you soon!
       </p>
       <a
-        href="/"
+        href="#"
+        onclick="redirectToPage()"
         class="inline-block px-6 py-2 bg-[#3b82f6] hover:bg-[#2563eb] text-white rounded-full font-medium transition"
       >
         ⬅ Back to Home
       </a>
+
+      <!-- script added for back button started-->
+      <script>
+        async function redirectToPage() {
+          try {
+            const res = await fetch("/latest", { method: "HEAD" });
+            if (res.ok) {
+              window.location.href = "/latest";
+            } else {
+              window.location.href = "/";
+            }
+          } catch (err) {
+            window.location.href = "/";
+          }
+        }
+      </script>
+      <!-- script added for back button finished-->
     </div>
 
     <script>
