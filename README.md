@@ -53,6 +53,7 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
   <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=60a5fa" alt="Linux" /></a>
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=60a5fa" alt="Python" /></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=3b82f6" alt="JavaScript" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=60a5fa" alt="TypeScript" /></a>
   <a href="https://reactjs.org/"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=60a5fa" alt="Node.js" /></a>
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=3b82f6" alt="Docker" /></a>
