@@ -58,7 +58,6 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=60a5fa" alt="Node.js" /></a>
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=3b82f6" alt="Docker" /></a>
   <a href="https://git-scm.com/"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=60a5fa" alt="Git" /></a>
-  <a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=3b82f6" alt="VS Code" /></a>
 </p>
 
 ## Expanded Tools & Ecosystems
