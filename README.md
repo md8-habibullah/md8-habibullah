@@ -8,7 +8,7 @@
 
 ---
 
-## 🌌 About Me
+## 🌌 About Me 
 
 I’m **Habibullah**, a Computer Science & Engineering student passionate about leveraging technology to learn, build, and serve. With a focus on **ethical hacking**, **Linux**, **AI**, and **software development**, I code with intention, faith, and a commitment to excellence.
 
