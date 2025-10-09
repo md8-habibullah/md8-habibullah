@@ -13,7 +13,7 @@
 I’m **Habibullah**, a Computer Science & Engineering student passionate about leveraging technology to learn, build, and serve. With a focus on **ethical hacking**, **Linux**, **AI**, and **software development**, I code with intention, faith, and a commitment to excellence.
 
 > _“Indeed, in the creation of the heavens and the earth… are signs for those who reflect.”_  
-> **– Al-Qur'an (3:190)**
+> **– Al-Qur'an (3:190)**  
 
 ---
 
@@ -96,7 +96,7 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ## ✨ Fun Fact
 
-> _I’m naturally calm but come alive with Linux, coding, or deep conversations. Picture me with a dark terminal, a cup of tea, and Qur’an recitation in the background — that’s my happy place!_
+> _I’m naturally calm but come alive with Linux, coding, or deep conversations. Picture me with a dark terminal, a cup of tea, and Qur’an recitation in the background — that’s my happy place! _ fggi < hdb
 
 ---
 
