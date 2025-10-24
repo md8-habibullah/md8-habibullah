@@ -1,4 +1,4 @@
-# 💻 Hey, I'm Habibullah – CSE Student & Tech Explorer
+# Hey, I'm Habibullah – CSE Student & Tech Explorer
 
 <p align="center">
   <a href="https://github.com/md8-habibullah">
@@ -8,7 +8,7 @@
 
 ---
 
-## 🌌 About Me 
+## About Me 
 
 I’m **Habibullah**, a Computer Science & Engineering student passionate about leveraging technology to learn, build, and serve. With a focus on **ethical hacking**, **Linux**, **AI**, and **software development**, I code with intention, faith, and a commitment to excellence.
 
@@ -17,7 +17,7 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <table align="center">
   <tr>
@@ -36,18 +36,18 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ---
 
-## 🧠 Interests
+## Interests
 
-- 🔐 **Ethical Hacking** – Exploring vulnerabilities to strengthen systems responsibly
-- 🐧 **Linux & Terminal Tools** – Thriving in open-source environments and CLI workflows
-- 💻 **Software & App Development** – Crafting intuitive and efficient solutions
-- 🌐 **Web Development** – Mastering frontend and backend technologies
-- 🤖 **AI & Automation** – Harnessing intelligent systems for innovation
-- 📚 **Lifelong Learning** – Embracing curiosity and continuous growth
+- **Ethical Hacking** – Exploring vulnerabilities to strengthen systems responsibly
+- **Linux & Terminal Tools** – Thriving in open-source environments and CLI workflows
+- **Software & App Development** – Crafting intuitive and efficient solutions
+- **Web Development** – Mastering frontend and backend technologies
+- **AI & Automation** – Harnessing intelligent systems for innovation
+- **Lifelong Learning** – Embracing curiosity and continuous growth
 
 ---
 
-## 🔧 Tools & Technologies
+## Tools & Technologies
 
 <p align="center">
   <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Linux-000000?style=for-the-badge&logo=linux&logoColor=60a5fa" alt="Linux" /></a>
@@ -73,17 +73,17 @@ I’m **Habibullah**, a Computer Science & Engineering student passionate about 
 
 ---
 
-## 🌱 Currently Exploring
+## Currently Exploring
 
-- 🔎 **Ethical Hacking** – Deepening penetration testing skills
-- 🧠 **AI & Intelligent Systems** – Experimenting with AI models
-- 🌍 **Full-Stack Development** – Building impactful software
-- 🧰 **Linux Mastery** – Enhancing terminal efficiency
-- 🤝 **Islamic Tech Mindset** – Integrating ethics and purpose
+- **Ethical Hacking** – Deepening penetration testing skills
+- **AI & Intelligent Systems** – Experimenting with AI models
+- **Full-Stack Development** – Building impactful software
+- **Linux Mastery** – Enhancing terminal efficiency
+- **Islamic Tech Mindset** – Integrating ethics and purpose
 
 ---
 
-## 📡 Let's Connect
+## Let's Connect
 
 <p align="center">
   <a href="https://github.com/md8-habibullah"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=60a5fa" alt="GitHub" /></a>
