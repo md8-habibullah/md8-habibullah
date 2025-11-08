@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
 
       # 1. CLEANUP: Delete pnpm-lock.yaml to force NPM usage
-      - name: Clean up lockfiles for NPM
+      - name: Clean up pnpm lockfile
         run: rm -f latest/pnpm-lock.yaml
         
       - name: Setup Node
@@ -40,37 +40,27 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm' # Hardcode cache to npm
+          # 👇 Tell the cache action where the package.json is
           cache-dependency-path: latest/package.json
           
-      - name: Restore cache
-        uses: actions/cache@v4
-        with:
-          # Use path to cache the modules inside the project directory
-          path: latest/node_modules
-          # Use package.json inside latest/ for reliable key generation
-          key: ${{ runner.os }}-npm-cache-${{ hashFiles('latest/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-cache-
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          # This action should now correctly detect the NPM lock file based on the setup above
           static_site_generator: next
           
+      # 🛑 CRITICAL FIX: Changed 'npm ci' to 'npm install'
       - name: Install dependencies (NPM)
         working-directory: latest 
-        run: npm ci
+        run: npm install # 'npm install' will generate a package-lock.json
         
       - name: Build with Next.js (Static Export)
-        # This runs 'npx next build'
         working-directory: latest 
         run: npx next build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Path to the final static output folder relative to repository root
+          # Path to the final static output folder
           path: ./latest/out 
 
   # Deployment job
