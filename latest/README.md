@@ -1,30 +1,90 @@
-# Portfolio website design
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+# md8-habibullah
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/habibullahs-projects-c1c0f26a/v0-portfolio-website-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/rDaK3QY4iHc)
+A lightweight personal portfolio built with Next.js, React and TypeScript.
 
-## Overview
+This repository contains a small portfolio site composed of modular React components (hero, header, projects, experience, skills, footer) and a modern toolchain (Next.js, Tailwind CSS, TypeScript).
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Quick overview
 
-## Deployment
+- Framework: Next.js
+- Language: TypeScript
+- Styling: Tailwind CSS / PostCSS
+- Package manager: pnpm (pnpm-lock.yaml present)
 
-Your project is live at:
+The UI is split into reusable components in the `components/` folder and the app entry is in the `app/` directory (Next.js app router). A small `lib/` folder holds utilities.
 
-**[https://vercel.com/habibullahs-projects-c1c0f26a/v0-portfolio-website-design](https://vercel.com/habibullahs-projects-c1c0f26a/v0-portfolio-website-design)**
+## Features
 
-## Build your app
+- Hero section
+- Header with theme support
+- Projects list (project cards)
+- Experience timeline
+- Skills section
+- Footer
+- Theme provider (dark/light)
 
-Continue building your app on:
+## Project structure (important files)
 
-**[https://v0.app/chat/rDaK3QY4iHc](https://v0.app/chat/rDaK3QY4iHc)**
+- `app/` — Next.js App Router pages and layout
+	- `layout.tsx`, `page.tsx`, `globals.css`
+- `components/` — UI components used by pages (e.g. `hero.tsx`, `projects.tsx`, `header.tsx`, `footer.tsx`, `theme-provider.tsx`)
+- `lib/` — small utilities (`utils.ts`)
+- `public/` — static assets
+- `styles/` — global CSS (Tailwind)
+- `package.json` — scripts & dependencies
 
-## How It Works
+## Requirements
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- Node.js 18+ recommended (matches Next.js 13+ / 16 runtime)
+- pnpm (preferred) or npm/yarn
+
+## Install
+
+Install dependencies with pnpm:
+
+```bash
+pnpm install
+```
+
+If you use npm or yarn, use the equivalent commands (`npm install` / `yarn install`).
+
+## Available scripts
+
+Run these from the project root. These map to the scripts in `package.json`.
+
+- Start dev server
+
+```bash
+pnpm run dev
+```
+
+- Build for production
+
+```bash
+pnpm run build
+```
+
+- Start production server (after build)
+
+```bash
+pnpm run start
+```
+
+- Lint the project
+
+```bash
+pnpm run lint
+```
+
+## Environment & deployment
+
+- No special environment variables are required by default. If you add third-party services (analytics, CMS, etc.), document required environment variables in this file.
+- Recommended deployment: Vercel — it has first-class Next.js support. You can also deploy to other platforms that support Node.js.
+
+## Notes & next steps
+
+- This repo uses the Next.js App Router (`app/`) and TypeScript. It's small and intended to be a portfolio template or personal site.
+- To customize, update the components in `components/` and the content in `app/page.tsx`.
+
+---
