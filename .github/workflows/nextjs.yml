@@ -28,75 +28,49 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # 1. FORCE NPM: Remove pnpm lockfile to ensure NPM is used for installation
-      - name: Force NPM Installation
-        working-directory: latest 
-        run: |
-          if [ -f "pnpm-lock.yaml" ]; then
-            rm pnpm-lock.yaml
-            echo "pnpm-lock.yaml removed to force npm usage."
-          fi
-          
-      - name: Detect package manager
-        id: detect-package-manager
-        working-directory: latest 
-        run: |
-          # Simplified logic: Always use NPM if yarn.lock is not present
-          if [ -f "yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=yarn" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "package.json" ]; then
-            # Hardcode CI-friendly NPM settings
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT 
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
-          
+      # 1. CLEANUP: Delete pnpm-lock.yaml to force NPM usage
+      - name: Clean up lockfiles for NPM
+        run: rm -f latest/pnpm-lock.yaml
+        
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-                    
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
+          cache: 'npm' # Hardcode cache to npm
+          cache-dependency-path: latest/package.json
           
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          # Path must be relative to the base directory's output (.next/cache inside latest/)
-          path: |
-            latest/.next/cache 
-          # Use package-lock.json (which npm will create) for cache key
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # Use path to cache the modules inside the project directory
+          path: latest/node_modules
+          # Use package.json inside latest/ for reliable key generation
+          key: ${{ runner.os }}-npm-cache-${{ hashFiles('latest/package.json') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+            ${{ runner.os }}-npm-cache-
 
-      - name: Install dependencies
-        # This runs 'npm ci'
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # This action should now correctly detect the NPM lock file based on the setup above
+          static_site_generator: next
+          
+      - name: Install dependencies (NPM)
         working-directory: latest 
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: npm ci
         
-      - name: Build with Next.js
+      - name: Build with Next.js (Static Export)
         # This runs 'npx next build'
         working-directory: latest 
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: npx next build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Points to the static export folder relative to the repository root
+          # Path to the final static output folder relative to repository root
           path: ./latest/out 
 
   # Deployment job
