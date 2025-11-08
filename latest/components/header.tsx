@@ -18,7 +18,7 @@ export default function Header() {
       <a href="/#">
         <div className="flex items-center gap-4">
           <img
-            src="https://avatars.githubusercontent.com/u/149287500?v=4"
+            src="https://avatars.githubusercontent.com/u/149287500?v=4&s=300"
             alt="MD. Habibullah Sharif"
             className="w-10 h-10 rounded-lg object-cover shadow-lg"
             width={40}

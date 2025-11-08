@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Full-Stack Developer & DevOps Engineer specializing in scalable applications, infrastructure automation, and Linux systems. Building secure, performant solutions with React, Node.js, Docker, and Kubernetes.",
   icons: {
-    icon: 'https://avatars.githubusercontent.com/u/149287500?v=4'
+    icon: 'https://avatars.githubusercontent.com/u/149287500?v=4&s=300'
   },
   keywords: [
     "Full-Stack Developer",
@@ -73,7 +73,7 @@ export default function RootLayout({
               "@type": "Person",
               name: "MD. HABIBULLAH SHARIF",
               url: "https://md8-habibullah.com",
-              image: "https://avatars.githubusercontent.com/u/149287500?v=4",
+              image: "https://avatars.githubusercontent.com/u/149287500?v=4&s=300",
               jobTitle: "Full-Stack Developer & DevOps Engineer",
               sameAs: ["https://github.com/md8-habibullah", "https://linkedin.com/in/md-habibullahs"],
             }),

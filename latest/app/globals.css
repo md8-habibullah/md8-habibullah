@@ -97,10 +97,12 @@
 @keyframes glow-pulse {
   0%,
   100% {
-    box-shadow: 0 0 20px rgba(var(--primary-rgb) / 0.3), inset 0 0 20px rgba(var(--primary-rgb) / 0.1);
+    box-shadow: 0 0 20px rgba(var(--primary-rgb) / 0.3),
+      inset 0 0 20px rgba(var(--primary-rgb) / 0.1);
   }
   50% {
-    box-shadow: 0 0 40px rgba(var(--primary-rgb) / 0.5), inset 0 0 30px rgba(var(--primary-rgb) / 0.15);
+    box-shadow: 0 0 40px rgba(var(--primary-rgb) / 0.5),
+      inset 0 0 30px rgba(var(--primary-rgb) / 0.15);
   }
 }
 
@@ -151,13 +153,18 @@
 
 .fire-button:hover {
   @apply scale-105;
-  box-shadow: 0 0 30px rgba(var(--accent) / 0.6), 0 0 60px rgba(var(--accent) / 0.2);
+  box-shadow: 0 0 30px rgba(var(--accent) / 0.6),
+    0 0 60px rgba(var(--accent) / 0.2);
 }
 
 .fire-button::before {
   content: "";
   @apply absolute inset-0 opacity-0 transition-opacity duration-300;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 70%
+  );
 }
 
 .fire-button:hover::before {
@@ -224,7 +231,8 @@
 }
 
 .profile-pic:hover {
-  box-shadow: 0 0 60px rgba(var(--primary-rgb) / 0.45), inset 0 0 30px rgba(var(--primary-rgb) / 0.1);
+  box-shadow: 0 0 60px rgba(var(--primary-rgb) / 0.45),
+    inset 0 0 30px rgba(var(--primary-rgb) / 0.1);
   transform: scale(1.02);
 }
 
@@ -248,4 +256,54 @@
   .will-change-transform {
     will-change: transform;
   }
+}
+
+/* for Hacker Textttttttttttttttttttttttttttttt */
+
+.accent-line {
+  width: 70px; /* Or whatever width you want */
+  height: 4px;
+  background-color: /* Your primary color, e.g., #FF0000 */ ;
+
+  /* The Animation */
+  transform-origin: left; /* Ensures it scales from the left */
+  animation: draw-line 1s ease-out forwards;
+  animation-delay: 0.3s; /* Start after the fade-in */
+  transform: scaleX(0); /* Start at 0 width */
+}
+
+@keyframes draw-line {
+  100% {
+    transform: scaleX(1); /* Animate to full width */
+  }
+}
+
+/* css for animate on hero section  */
+
+@keyframes pulse-slow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6; /* Fade out slightly */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s infinite ease-in-out;
+}
+
+/* hero section social button design  */
+
+/* Add this to your main CSS file (e.g., globals.css or index.css) */
+
+.social-link-pill {
+  @apply flex items-center p-2 rounded-full  text-muted-foreground hover:bg-primary hover:text-white transition-all duration-300 ease-in-out overflow-hidden;
+}
+
+.social-link-text {
+  @apply whitespace-nowrap font-semibold max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 group-hover:ml-2 transition-all duration-300 ease-in-out;
 }
