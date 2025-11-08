@@ -1,0 +1,251 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Dark mode only (forced) */
+  --background: oklch(0.068 0 0);
+  --foreground: oklch(0.96 0 0);
+  --card: oklch(0.11 0 0);
+  --card-foreground: oklch(0.96 0 0);
+  --primary: oklch(0.62 0.22 29.23);
+  --primary-foreground: oklch(0.068 0 0);
+  --secondary: oklch(0.15 0 0);
+  --secondary-foreground: oklch(0.96 0 0);
+  --accent: oklch(0.62 0.22 29.23);
+  --muted: oklch(0.35 0 0);
+  --muted-foreground: oklch(0.72 0 0);
+  --border: oklch(0.17 0 0);
+  --input: oklch(0.12 0 0);
+  --ring: oklch(0.62 0.22 29.23);
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+}
+
+/* Enhanced animations for professional feel */
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(var(--primary-rgb) / 0.3), inset 0 0 20px rgba(var(--primary-rgb) / 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(var(--primary-rgb) / 0.5), inset 0 0 30px rgba(var(--primary-rgb) / 0.15);
+  }
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes border-glow {
+  0%,
+  100% {
+    border-color: hsl(var(--primary-hsl) / 0.3);
+  }
+  50% {
+    border-color: hsl(var(--primary-hsl) / 0.8);
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.5s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.animate-float-up {
+  animation: float-up 3s ease-in-out infinite;
+}
+
+/* Enhanced button styling with glow effect */
+.fire-button {
+  @apply relative inline-flex items-center justify-center px-8 py-3 rounded-lg font-semibold transition-all duration-300 overflow-hidden;
+  @apply bg-primary text-primary-foreground hover:shadow-lg;
+  box-shadow: 0 0 20px rgba(var(--accent) / 0.3);
+}
+
+.fire-button:hover {
+  @apply scale-105;
+  box-shadow: 0 0 30px rgba(var(--accent) / 0.6), 0 0 60px rgba(var(--accent) / 0.2);
+}
+
+.fire-button::before {
+  content: "";
+  @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+}
+
+.fire-button:hover::before {
+  @apply opacity-100;
+}
+
+/* Professional header styling */
+.header-bar {
+  @apply flex items-center justify-between py-4 px-4 sm:px-8 border-b border-border/50 sticky top-0 z-50;
+  @apply bg-background/80 backdrop-blur-md;
+}
+
+.nav-link {
+  @apply text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium text-sm uppercase tracking-wide;
+  @apply relative;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+/* Enhanced section styling */
+.section-spacing {
+  @apply py-20 sm:py-28 lg:py-32 px-4 sm:px-8 lg:px-12;
+}
+
+.section-title {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance leading-tight;
+}
+
+.section-subtitle {
+  @apply text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl;
+}
+
+.accent-line {
+  @apply h-1 w-12 sm:w-16 bg-primary rounded-full mb-6;
+}
+
+/* Enhanced card with 3D-like hover effect */
+.minimal-card {
+  @apply rounded-xl border border-border/50 bg-card p-6 sm:p-8 transition-all duration-300;
+  @apply hover:border-primary/50 hover:shadow-lg;
+}
+
+.minimal-card:hover {
+  box-shadow: 0 10px 40px rgba(var(--primary-rgb) / 0.15);
+}
+
+.skill-tag {
+  @apply px-4 py-2 rounded-full border border-border/50 text-sm font-medium;
+  @apply transition-all duration-300 cursor-default;
+  @apply hover:border-primary/50 hover:bg-primary/10 hover:text-primary;
+}
+
+.profile-pic {
+  @apply w-40 h-40 md:w-56 md:h-56 rounded-2xl object-cover shadow-2xl;
+  box-shadow: 0 0 40px rgba(var(--primary-rgb) / 0.25);
+  transition: all 0.3s ease;
+}
+
+.profile-pic:hover {
+  box-shadow: 0 0 60px rgba(var(--primary-rgb) / 0.45), inset 0 0 30px rgba(var(--primary-rgb) / 0.1);
+  transform: scale(1.02);
+}
+
+.divider {
+  @apply h-px w-full bg-gradient-to-r from-transparent via-border/50 to-transparent;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  @apply p-2.5 rounded-lg border border-border/50 transition-all duration-300;
+  @apply hover:border-primary/50 hover:bg-primary/10;
+  @apply cursor-not-allowed opacity-50;
+}
+
+/* Performance optimizations */
+@layer utilities {
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .will-change-transform {
+    will-change: transform;
+  }
+}
