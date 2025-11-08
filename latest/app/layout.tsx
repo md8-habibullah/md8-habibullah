@@ -75,7 +75,7 @@ export default function RootLayout({
               url: "https://md8-habibullah.com",
               image: "https://avatars.githubusercontent.com/u/149287500?v=4",
               jobTitle: "Full-Stack Developer & DevOps Engineer",
-              sameAs: ["https://github.com/md8-habibullah", "https://linkedin.com/in/md-habibullah-sharif"],
+              sameAs: ["https://github.com/md8-habibullah", "https://linkedin.com/in/md-habibullahs"],
             }),
           }}
         />
