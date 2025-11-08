@@ -1,6 +1,6 @@
 # Sample workflow for building and deploying a Next.js site to GitHub Pages
 #
-# This version is customized for a Next.js project residing in the 'latest/' subdirectory.
+# This version is customized to FORCE NPM usage and deploy from the 'latest/' subdirectory.
 #
 name: Deploy Next.js site to Pages
 
@@ -30,24 +30,30 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
+      # 1. FORCE NPM: Remove pnpm lockfile to ensure NPM is used for installation
+      - name: Force NPM Installation
+        working-directory: latest 
+        run: |
+          if [ -f "pnpm-lock.yaml" ]; then
+            rm pnpm-lock.yaml
+            echo "pnpm-lock.yaml removed to force npm usage."
+          fi
+          
       - name: Detect package manager
         id: detect-package-manager
         working-directory: latest 
         run: |
-          if [ -f "pnpm-lock.yaml" ]; then
-            echo "manager=pnpm" >> $GITHUB_OUTPUT
-            echo "command=install --frozen-lockfile" >> $GITHUB_OUTPUT
-            echo "runner=pnpm exec" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "yarn.lock" ]; then
+          # Simplified logic: Always use NPM if yarn.lock is not present
+          if [ -f "yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=yarn" >> $GITHUB_OUTPUT
             exit 0
           elif [ -f "package.json" ]; then
+            # Hardcode CI-friendly NPM settings
             echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT 
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
             exit 0
           else
@@ -60,14 +66,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          
-      - name: Setup pnpm
-        if: steps.detect-package-manager.outputs.manager == 'pnpm'
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
-          run_install: false
-          
+                    
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -76,23 +75,28 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
+          # Path must be relative to the base directory's output (.next/cache inside latest/)
           path: |
             latest/.next/cache 
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # Use package-lock.json (which npm will create) for cache key
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
       - name: Install dependencies
+        # This runs 'npm ci'
         working-directory: latest 
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         
       - name: Build with Next.js
+        # This runs 'npx next build'
         working-directory: latest 
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Points to the static export folder relative to the repository root
           path: ./latest/out 
 
   # Deployment job
