@@ -40,7 +40,6 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm' # Hardcode cache to npm
-          # 👇 Tell the cache action where the package.json is
           cache-dependency-path: latest/package.json
           
       - name: Setup Pages
@@ -48,10 +47,10 @@ jobs:
         with:
           static_site_generator: next
           
-      # 🛑 CRITICAL FIX: Changed 'npm ci' to 'npm install'
+      # 🛑 CRITICAL FIX: Add --legacy-peer-deps to ignore React 19 conflict
       - name: Install dependencies (NPM)
         working-directory: latest 
-        run: npm install # 'npm install' will generate a package-lock.json
+        run: npm install --legacy-peer-deps
         
       - name: Build with Next.js (Static Export)
         working-directory: latest 
