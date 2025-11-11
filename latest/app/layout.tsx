@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 import { GoogleTagManager } from '@next/third-parties/google'
 
@@ -50,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -58,15 +59,6 @@ export default function RootLayout({
 
         {/* Google Tag Manager */}
         {/* <GoogleTagManager gtmId="GTM-KC8SQW4R" /> */}
-
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('theme', 'dark');
-          `,
-          }}
-        />
 
         <link
           rel="prefetch"
@@ -78,8 +70,9 @@ export default function RootLayout({
       </head>
 
       <body className="font-sans antialiased bg-background text-foreground">
-
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {children}
+        </ThemeProvider>
         <Analytics />
         <script
           type="application/ld+json"

@@ -3,32 +3,54 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* LIGHT MODE (Default) - Balanced Polished Gray (Not 100% white, easier on eyes) */
 :root {
-  /* Dark mode only (forced) */
-  --background: oklch(0.068 0 0);
-  --foreground: oklch(0.96 0 0);
-  --card: oklch(0.11 0 0);
-  --card-foreground: oklch(0.96 0 0);
+  /* Light mode: Balanced polished gray-white (not too bright, not too dark) */
+  --background: oklch(0.88 0.008 260);      /* Polished gray-white (balanced, not 100% bright) */
+  --foreground: oklch(0.22 0.018 255);      /* Dark blue-gray text (good contrast) */
+  --card: oklch(0.82 0.006 250);            /* Soft gray-white cards */
+  --card-foreground: oklch(0.20 0.015 255); /* Dark text on cards */
 
-  /* === YOUR NEW PRIMARY COLORS === */
-  --primary: oklch(0.56 0.14 170.5); /* This is the new Deep Green */
-  --primary-foreground: oklch(
-    0.98 0.01 166.8
-  ); /* This is a light, tinted white for text on buttons */
+  /* Islamic Green Primary Color (matching Bangladesh & Islamic heritage) */
+  --primary: oklch(0.50 0.13 171);          /* Deep Islamic Green (professional on light) */
+  --primary-foreground: oklch(0.98 0.001 240); /* White text on green buttons */
 
-  --secondary: oklch(0.15 0 0);
-  --secondary-foreground: oklch(0.96 0 0);
+  --secondary: oklch(0.52 0.12 258);        /* Muted blue accent (balanced) */
+  --secondary-foreground: oklch(0.98 0.001 240); /* White text */
 
-  --accent: oklch(0.56 0.14 170.5); /* Changed to match the new Deep Green */
+  --accent: oklch(0.50 0.13 171);           /* Green accent */
 
-  --muted: oklch(0.35 0 0);
-  --muted-foreground: oklch(0.72 0 0);
-  --border: oklch(0.17 0 0);
-  --input: oklch(0.12 0 0);
+  --muted: oklch(0.65 0.008 250);           /* Medium gray for secondary text */
+  --muted-foreground: oklch(0.42 0.015 255); /* Medium-dark gray */
+  --border: oklch(0.80 0.005 250);          /* Soft gray border */
+  --input: oklch(0.85 0.006 255);           /* Input background - polished gray */
 
-  --ring: oklch(0.56 0.14 170.5); /* Changed to match the new Deep Green */
+  --ring: oklch(0.50 0.13 171);             /* Focus ring - green */
 
   --radius: 0.5rem;
+}
+
+/* DARK MODE - Deep Black with Vibrant Colors (COMPLETELY DIFFERENT) */
+.dark {
+  --background: oklch(0.068 0 0);           /* Very dark (almost black) */
+  --foreground: oklch(0.96 0 0);            /* Off-white (opposite of light mode) */
+  --card: oklch(0.11 0 0);                  /* Dark gray */
+  --card-foreground: oklch(0.96 0 0);       /* Off-white text */
+
+  --primary: oklch(0.62 0.18 170.5);        /* BRIGHT vibrant green (different from light) */
+  --primary-foreground: oklch(0.98 0.01 166.8); /* Light text */
+
+  --secondary: oklch(0.65 0.15 265);        /* Bright vibrant blue (different from light) */
+  --secondary-foreground: oklch(0.98 0.001 240); /* White text */
+
+  --accent: oklch(0.62 0.18 170.5);         /* Bright green */
+
+  --muted: oklch(0.35 0 0);                 /* Medium dark gray */
+  --muted-foreground: oklch(0.72 0 0);      /* Light gray text */
+  --border: oklch(0.17 0 0);                /* Dark border */
+  --input: oklch(0.12 0 0);                 /* Dark input */
+
+  --ring: oklch(0.62 0.18 170.5);           /* Bright green ring */
 }
 
 @theme inline {
@@ -250,10 +272,9 @@
 }
 
 /* Theme toggle button */
-.theme-toggle {
+.theme-toggle-btn {
   @apply p-2.5 rounded-lg border border-border/50 transition-all duration-300;
   @apply hover:border-primary/50 hover:bg-primary/10;
-  @apply cursor-not-allowed opacity-50;
 }
 
 /* Performance optimizations */

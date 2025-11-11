@@ -1,18 +1,19 @@
 'use client'
 
 import * as React from 'react'
-import {
-  ThemeProvider as NextThemesProvider,
-  type ThemeProviderProps,
-} from 'next-themes'
+import { ThemeProvider as NextThemesProvider, type ThemeProviderProps } from 'next-themes'
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider
       {...props}
-      defaultTheme="dark"     // Start everyone in dark mode
-      enableSystem={true}    // Allow switching based on system preference
-      attribute="class"      // Uses class strategy (e.g., 'dark' class on html)
+      attribute="class"           // Uses 'dark' class on html element
+      defaultTheme="light"        // Default to light mode (clean & professional)
+      enableSystem={true}         // Users can follow system preference
+      enableColorScheme={false}   // Prevent browser color scheme changes
+      storageKey="theme"          // Save preference to localStorage
+      themes={["light", "dark"]}  // Available themes
+      forcedTheme={undefined}     // Allow switching between themes
     >
       {children}
     </NextThemesProvider>

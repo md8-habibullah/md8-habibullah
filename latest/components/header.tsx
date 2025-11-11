@@ -1,30 +1,24 @@
 "use client"
 
 import { useEffect, useState, useRef } from "react"
+import { useTheme } from "next-themes"
 import { Lock, Sun, Moon, Menu, X } from "lucide-react"
 import SiteUptime from "./SiteUptime"
 
 const SiteUptimeAny: any = SiteUptime as any
 
 export default function Header() {
+  const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isDarkMode, setIsDarkMode] = useState(true) // default dark mode
 
   const menuRef = useRef<HTMLElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
 
-  // Initialize theme
+  // Mark component as mounted to prevent hydration mismatch
   useEffect(() => {
     setMounted(true)
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark")
-      document.documentElement.classList.remove("light")
-    } else {
-      document.documentElement.classList.add("light")
-      document.documentElement.classList.remove("dark")
-    }
-  }, [isDarkMode])
+  }, [])
 
   // Handle clicks outside menu & scroll
   useEffect(() => {
@@ -48,7 +42,10 @@ export default function Header() {
     }
   }, [isMenuOpen])
 
+  // Don't render until mounted to avoid hydration mismatch
   if (!mounted) return null
+
+  const isDark = theme === "dark"
 
   return (
     <header className="header-bar relative">
@@ -88,12 +85,12 @@ export default function Header() {
 
         {/* Dark mode toggle */}
         <button
-          className="theme-toggle p-2 rounded-full border border-border/30 hover:bg-primary/10 transition"
-          onClick={() => setIsDarkMode(!isDarkMode)}
+          className="theme-toggle-btn p-2 rounded-full border border-border/30 hover:bg-primary/10 transition cursor-pointer"
+          onClick={() => setTheme(isDark ? "light" : "dark")}
           aria-label="Toggle theme"
-          title="Toggle dark/light mode"
+          title={isDark ? "Switch to light mode" : "Switch to dark mode"}
         >
-          {isDarkMode ? <Moon className="w-5 h-5 text-primary" /> : <Sun className="w-5 h-5 text-yellow-400" />}
+          {isDark ? <Moon className="w-5 h-5 text-primary" /> : <Sun className="w-5 h-5 text-yellow-400" />}
         </button>
 
         {/* Mobile menu toggle */}
