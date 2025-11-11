@@ -5,6 +5,9 @@ import { useEffect, useState, useRef } from "react"
 import { Lock, Menu, X } from "lucide-react"
 import SiteUptime from "./SiteUptime"
 
+// Cast SiteUptime to `any` so we can pass the compact prop from this TSX file
+const SiteUptimeAny: any = SiteUptime as any
+
 export default function Header() {
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -86,7 +89,14 @@ export default function Header() {
 
       {/* --- Right-side Icons --- */}
       <div className="flex items-center gap-4 sm:gap-6">
-        <SiteUptime />
+        {/* Show full SiteUptime on md+ and a compact variant on small screens */}
+        <div className="hidden md:block">
+          <SiteUptime />
+        </div>
+        <div className="md:hidden">
+          {/* compact prop tells SiteUptime to render a smaller inline indicator */}
+          <SiteUptimeAny compact={true} />
+        </div>
 
         <div className="theme-toggle" aria-label="Dark theme locked" title="Dark theme is locked">
           <Lock className="w-5 h-5 text-primary" />

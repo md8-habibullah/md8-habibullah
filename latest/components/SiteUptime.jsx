@@ -84,7 +84,7 @@ const formatLoadTime = (ms) => {
   return `${(ms / 1000).toFixed(2)} s`;
 };
 
-export default function SiteUptime() {
+export default function SiteUptime({ compact = false }) {
   // --- States for data that updates every second ---
   // REMOVED: sessionUptime state is gone.
   const [bdTime, setBdTime] = useState("--:--:--");
@@ -167,15 +167,21 @@ export default function SiteUptime() {
     };
   }, []); // The empty array [] means this effect runs only once on mount
 
+  // popover positioning differs for compact (mobile) vs full (desktop)
+  const popoverPositionClass = compact
+    ? "absolute top-full left-1/2 transform -translate-x-1/2 mt-2"
+    : "absolute top-full right-0 mt-2"
+
   return (
     <div className="relative group" title="Session Info" ref={popoverRef}>
       {/* --- 1. The Visible Timer (now clickable) --- */}
       <div
-        className="flex items-center gap-3 text-xl font-mono text-muted-foreground cursor-pointer"
+        className={compact ? "flex items-center gap-2 text-sm font-mono text-muted-foreground cursor-pointer" : "flex items-center gap-3 text-xl font-mono text-muted-foreground cursor-pointer"}
         onClick={() => setIsPopoverOpen((prev) => !prev)}
       >
-        <div className="relative w-6 h-6 flex items-center justify-center">
-          <div className="broadcast-dot" />
+        <div className={`relative flex items-center justify-center ${compact ? 'w-4 h-4' : 'w-6 h-6'}`}>
+          {/* inline style used to slightly reduce the dot when compact */}
+          <div className="broadcast-dot" style={{ width: compact ? 6 : 8, height: compact ? 6 : 8 }} />
         </div>
         {/* UPDATED: Shows the single totalUptime state */}
         <span>{formatUptime(totalUptime)}</span>
@@ -184,8 +190,8 @@ export default function SiteUptime() {
       {/* --- 2. The Hover Popover (Updated) --- */}
       <div
         className={`
-          absolute top-full right-0 mt-2 
-          w-56 p-3
+          ${popoverPositionClass}
+          z-60 max-w-[90vw] sm:w-56 ${compact ? 'p-2' : 'p-3'}
           bg-neutral-800 border border-neutral-700 rounded-lg shadow-xl 
           text-xs text-muted-foreground
           transition-all duration-150 ease-in-out

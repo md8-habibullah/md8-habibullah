@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   title: "MD. HABIBULLAH SHARIF - Full-Stack Developer & DevOps Engineer | Portfolio",
   description:
     "Full-Stack Developer & DevOps Engineer specializing in scalable applications, infrastructure automation, and Linux systems. Building secure, performant solutions with React, Node.js, Docker, and Kubernetes.",
-  icons: {
-    icon: 'https://avatars.githubusercontent.com/u/149287500?v=4&s=300'
-  },
+  // icons: {
+  //   icon: 'https://avatars.githubusercontent.com/u/149287500?v=4&s=300'
+  // },
   keywords: [
     "Full-Stack Developer",
     "DevOps Engineer",
