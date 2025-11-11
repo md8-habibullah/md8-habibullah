@@ -51,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,17 +60,24 @@ export default function RootLayout({
         {/* Google Tag Manager */}
         {/* <GoogleTagManager gtmId="GTM-KC8SQW4R" /> */}
 
-        <link
-          rel="prefetch"
-          href="https://status.habibullah.dev"
-          as="document"
-          crossOrigin="anonymous"
+        {/* Force dark theme on page load - runs before React hydration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                // Remove any saved theme from localStorage
+                localStorage.removeItem('theme');
+                // Force dark theme on html element
+                document.documentElement.classList.add('dark');
+                document.documentElement.classList.remove('light');
+              })();
+            `,
+          }}
         />
-
       </head>
 
       <body className="font-sans antialiased bg-background text-foreground">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
         </ThemeProvider>
         <Analytics />
