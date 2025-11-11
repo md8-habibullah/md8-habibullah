@@ -82,6 +82,9 @@ I am open to collaborations and exciting opportunities. Feel free to connect or 
   <a href="https://github.com/md8-habibullah" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=60a5fa" alt="GitHub" />
   </a>
+  <a href="https://habibullah.dev" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Portfolio-0EA5E9?style=for-the-badge&logo=google-earth&logoColor=white" alt="Portfolio" />
+  </a>
   <a href="https://linkedin.com/in/md-habibullahs" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
