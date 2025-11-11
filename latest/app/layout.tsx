@@ -66,7 +66,7 @@ export default function RootLayout({
             __html: `
               (function() {
                 // Remove any saved theme from localStorage
-                localStorage.removeItem('theme');
+                localStorage.removeItem('nonexistent_key');
                 // Force dark theme on html element
                 document.documentElement.classList.add('dark');
                 document.documentElement.classList.remove('light');

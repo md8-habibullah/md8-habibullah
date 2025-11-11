@@ -3,54 +3,54 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* LIGHT MODE (Default) - Balanced Polished Gray (Not 100% white, easier on eyes) */
+/* LIGHT MODE - Balanced Polished Gray (Not 100% white, easier on eyes) */
 :root {
   /* Light mode: Balanced polished gray-white (not too bright, not too dark) */
-  --background: oklch(0.88 0.008 260);      /* Polished gray-white (balanced, not 100% bright) */
-  --foreground: oklch(0.22 0.018 255);      /* Dark blue-gray text (good contrast) */
-  --card: oklch(0.82 0.006 250);            /* Soft gray-white cards */
-  --card-foreground: oklch(0.20 0.015 255); /* Dark text on cards */
+  --background: #f5f5f5;                    /* Light gray-white background */
+  --foreground: #1a1a1a;                    /* Dark text */
+  --card: #ffffff;                          /* White cards */
+  --card-foreground: #0d0d0d;               /* Dark text on cards */
 
   /* Islamic Green Primary Color (matching Bangladesh & Islamic heritage) */
-  --primary: oklch(0.50 0.13 171);          /* Deep Islamic Green (professional on light) */
-  --primary-foreground: oklch(0.98 0.001 240); /* White text on green buttons */
+  --primary: #10b981;                       /* Green button color */
+  --primary-foreground: #ffffff;            /* White text on green buttons */
 
-  --secondary: oklch(0.52 0.12 258);        /* Muted blue accent (balanced) */
-  --secondary-foreground: oklch(0.98 0.001 240); /* White text */
+  --secondary: #3b82f6;                     /* Blue accent */
+  --secondary-foreground: #ffffff;          /* White text */
 
-  --accent: oklch(0.50 0.13 171);           /* Green accent */
+  --accent: #10b981;                        /* Green accent */
 
-  --muted: oklch(0.65 0.008 250);           /* Medium gray for secondary text */
-  --muted-foreground: oklch(0.42 0.015 255); /* Medium-dark gray */
-  --border: oklch(0.80 0.005 250);          /* Soft gray border */
-  --input: oklch(0.85 0.006 255);           /* Input background - polished gray */
+  --muted: #9ca3af;                         /* Medium gray for secondary text */
+  --muted-foreground: #6b7280;              /* Medium-dark gray */
+  --border: #e5e7eb;                        /* Light gray border */
+  --input: #f3f4f6;                         /* Light input background */
 
-  --ring: oklch(0.50 0.13 171);             /* Focus ring - green */
+  --ring: #10b981;                          /* Focus ring - green */
 
   --radius: 0.5rem;
 }
 
-/* DARK MODE - Deep Black with Vibrant Colors (COMPLETELY DIFFERENT) */
+/* DARK MODE - Softer DaisyUI-style Dark (#1d232a) */
 .dark {
-  --background: oklch(0.068 0 0);           /* Very dark (almost black) */
-  --foreground: oklch(0.96 0 0);            /* Off-white (opposite of light mode) */
-  --card: oklch(0.11 0 0);                  /* Dark gray */
-  --card-foreground: oklch(0.96 0 0);       /* Off-white text */
+  --background: #1d232a;                    /* Softer dark bg (DaisyUI dark) */
+  --foreground: #e5e7eb;                    /* Light text */
+  --card: #2a3142;                          /* Slightly lighter card bg */
+  --card-foreground: #e5e7eb;               /* Light text on cards */
 
-  --primary: oklch(0.62 0.18 170.5);        /* BRIGHT vibrant green (different from light) */
-  --primary-foreground: oklch(0.98 0.01 166.8); /* Light text */
+  --primary: #34d399;                       /* BRIGHT vibrant green */
+  --primary-foreground: #1d232a;            /* Dark text on green buttons */
 
-  --secondary: oklch(0.65 0.15 265);        /* Bright vibrant blue (different from light) */
-  --secondary-foreground: oklch(0.98 0.001 240); /* White text */
+  --secondary: #60a5fa;                     /* Bright vibrant blue */
+  --secondary-foreground: #ffffff;          /* White text */
 
-  --accent: oklch(0.62 0.18 170.5);         /* Bright green */
+  --accent: #34d399;                        /* Bright green */
 
-  --muted: oklch(0.35 0 0);                 /* Medium dark gray */
-  --muted-foreground: oklch(0.72 0 0);      /* Light gray text */
-  --border: oklch(0.17 0 0);                /* Dark border */
-  --input: oklch(0.12 0 0);                 /* Dark input */
+  --muted: #6b7280;                         /* Medium gray for secondary text */
+  --muted-foreground: #9ca3af;              /* Light gray text */
+  --border: #3f4655;                        /* Softer borders */
+  --input: #252d38;                         /* Softer input background */
 
-  --ring: oklch(0.62 0.18 170.5);           /* Bright green ring */
+  --ring: #34d399;                          /* Bright green ring */
 }
 
 @theme inline {
