@@ -57,7 +57,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0a0a0a" />
 
         {/* Google Tag Manager */}
-        <GoogleTagManager gtmId="GTM-KC8SQW4R" />
+        {/* <GoogleTagManager gtmId="GTM-KC8SQW4R" /> */}
 
         <script
           dangerouslySetInnerHTML={{
