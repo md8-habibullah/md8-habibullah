@@ -1,65 +1,58 @@
 "use client"
 
-// 1. Import useRef
-import { useEffect, useState, useRef } from "react" 
-import { Lock, Menu, X } from "lucide-react"
+import { useEffect, useState, useRef } from "react"
+import { Lock, Sun, Moon, Menu, X } from "lucide-react"
 import SiteUptime from "./SiteUptime"
 
-// Cast SiteUptime to `any` so we can pass the compact prop from this TSX file
 const SiteUptimeAny: any = SiteUptime as any
 
 export default function Header() {
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDarkMode, setIsDarkMode] = useState(true) // default dark mode
 
-  // 2. Create refs for the menu and the button
   const menuRef = useRef<HTMLElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
 
+  // Initialize theme
   useEffect(() => {
     setMounted(true)
-    document.documentElement.classList.add("dark")
-  }, [])
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark")
+      document.documentElement.classList.remove("light")
+    } else {
+      document.documentElement.classList.add("light")
+      document.documentElement.classList.remove("dark")
+    }
+  }, [isDarkMode])
 
-  // 3. NEW: Add useEffect to handle "click outside" and "scroll"
+  // Handle clicks outside menu & scroll
   useEffect(() => {
-    // If the menu isn't open, do nothing
     if (!isMenuOpen) return
 
-    // Function to handle clicks
     const handleClickOutside = (event: MouseEvent) => {
-      // If the click is *inside* the menu (menuRef) or *on* the button (buttonRef), don't close it
       if (
         (menuRef.current && event.target instanceof Node && menuRef.current.contains(event.target)) ||
         (buttonRef.current && event.target instanceof Node && buttonRef.current.contains(event.target))
-      ) {
-        return
-      }
-      // Otherwise, close the menu
+      ) return
       setIsMenuOpen(false)
     }
 
-    // Function to handle scroll
-    const handleScroll = () => {
-      setIsMenuOpen(false)
-    }
+    const handleScroll = () => setIsMenuOpen(false)
 
-    // Add event listeners
     document.addEventListener("mousedown", handleClickOutside)
     window.addEventListener("scroll", handleScroll)
-
-    // Cleanup function to remove listeners
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
       window.removeEventListener("scroll", handleScroll)
     }
-  }, [isMenuOpen]) // This effect re-runs whenever isMenuOpen changes
+  }, [isMenuOpen])
 
   if (!mounted) return null
 
   return (
     <header className="header-bar relative">
-      {/* ... (logo) ... */}
+      {/* Logo */}
       <a href="/#">
         <div className="flex items-center gap-4">
           <img
@@ -76,7 +69,7 @@ export default function Header() {
         </div>
       </a>
 
-      {/* --- Desktop Navigation --- */}
+      {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8">
         <a href="/#" className="nav-link">Home</a>
         <a href="#about" className="nav-link">About</a>
@@ -87,24 +80,25 @@ export default function Header() {
         </a>
       </nav>
 
-      {/* --- Right-side Icons --- */}
+      {/* Right-side Icons */}
       <div className="flex items-center gap-4 sm:gap-6">
-        {/* Show full SiteUptime on md+ and a compact variant on small screens */}
-        <div className="hidden md:block">
-          <SiteUptime />
-        </div>
-        <div className="md:hidden">
-          {/* compact prop tells SiteUptime to render a smaller inline indicator */}
-          <SiteUptimeAny compact={true} />
-        </div>
+        {/* SiteUptime */}
+        <div className="hidden md:block"><SiteUptime /></div>
+        <div className="md:hidden"><SiteUptimeAny compact /></div>
 
-        <div className="theme-toggle" aria-label="Dark theme locked" title="Dark theme is locked">
-          <Lock className="w-5 h-5 text-primary" />
-        </div>
-
-        {/* 4. Add the ref to the button */}
+        {/* Dark mode toggle */}
         <button
-          ref={buttonRef} 
+          className="theme-toggle p-2 rounded-full border border-border/30 hover:bg-primary/10 transition"
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          aria-label="Toggle theme"
+          title="Toggle dark/light mode"
+        >
+          {isDarkMode ? <Moon className="w-5 h-5 text-primary" /> : <Sun className="w-5 h-5 text-yellow-400" />}
+        </button>
+
+        {/* Mobile menu toggle */}
+        <button
+          ref={buttonRef}
           className="md:hidden p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
@@ -113,29 +107,19 @@ export default function Header() {
         </button>
       </div>
 
-      {/* --- Mobile Navigation Menu --- */}
+      {/* Mobile Navigation */}
       <nav
-        ref={menuRef} // 5. Add the ref to the menu
+        ref={menuRef}
         className={`
           absolute top-full left-0 w-full bg-background/95 backdrop-blur-sm z-50
           flex flex-col items-center gap-6 py-8
           md:hidden ${isMenuOpen ? "flex" : "hidden"}
         `}
-        // 6. REMOVED onClick from the <nav> itself
       >
-        {/* 7. Add onClick to each link to close menu on navigation */}
-        <a href="/#" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>
-          Home
-        </a>
-        <a href="#about" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>
-          About
-        </a>
-        <a href="#skills" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>
-          Skills
-        </a>
-        <a href="#projects" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>
-          Projects
-        </a>
+        <a href="/#" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Home</a>
+        <a href="#about" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>About</a>
+        <a href="#skills" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Skills</a>
+        <a href="#projects" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Projects</a>
         <a
           href="https://status.habibullah.dev"
           target="_blank"

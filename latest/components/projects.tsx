@@ -1,4 +1,7 @@
+"use client"
+
 import ProjectCard from "./project-card"
+import HackerText from "./HackerText"
 
 export default function Projects() {
   const projects = [
@@ -52,16 +55,23 @@ export default function Projects() {
     <section id="projects" className="section-spacing bg-card/20">
       <div className="max-w-6xl mx-auto space-y-16">
         <div className="space-y-4 animate-fade-in-up">
-          <h2 className="section-title">Featured Projects</h2>
+          <HackerText
+            text="Featured Projects"
+            className="section-title font-mono text-3xl sm:text-4xl"
+          />
           <div className="accent-line" />
-          <p className="section-subtitle">
+          <p className="section-subtitle text-muted-foreground">
             A selection of projects showcasing full-stack development and DevOps expertise.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
-            <div key={project.title} style={{ animationDelay: `${index * 0.1}s` }} className="animate-fade-in-up">
+            <div
+              key={project.title}
+              style={{ animationDelay: `${index * 0.1}s` }}
+              className="animate-fade-in-up"
+            >
               <ProjectCard project={project} />
             </div>
           ))}
@@ -72,7 +82,7 @@ export default function Projects() {
             href="https://github.com/md8-habibullah"
             target="_blank"
             rel="noopener noreferrer"
-            className="fire-button inline-flex"
+            className="fire-button inline-flex font-mono"
           >
             Explore More on GitHub
           </a>
