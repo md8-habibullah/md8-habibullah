@@ -80,62 +80,31 @@ export default function Footer() {
             <motion.div variants={itemVariants} className="space-y-4">
               <h4 className="font-semibold text-foreground uppercase tracking-wide text-sm">Connect</h4>
               <p className="text-sm text-muted-foreground">Open to collaborations and exciting opportunities.</p>
-              <div className="flex items-center gap-4 pt-2">
-                {/* GitHub */}
-                <a
-                  href="https://github.com/md8-habibullah"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                  aria-label="GitHub"
-                >
-                  <Github className="w-5 h-5" />
-                </a>
-
-                {/* LinkedIn */}
-                <a
-                  href="https://www.linkedin.com/in/md-habibullahs"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-5 h-5" />
-                </a>
-
-                {/* Facebook */}
-                <a
-                  href="https://www.facebook.com/md8.habibullah"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="w-5 h-5" />
-                </a>
-
-                {/* WhatsApp */}
-                <a
-                  href="https://wa.me/8801329876070"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                  aria-label="WhatsApp"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                </a>
-
-                {/* Email */}
-                <a
-                  href="mailto:md8.habibullah@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                  aria-label="Email"
-                >
-                  <Mail className="w-5 h-5" />
-                </a>
-
+              <div className="flex flex-wrap gap-4 pt-2">
+                {[
+                  { href: "https://github.com/md8-habibullah", label: "GitHub", Icon: Github },
+                  { href: "https://www.linkedin.com/in/md-habibullahs", label: "LinkedIn", Icon: Linkedin },
+                  { href: "https://www.facebook.com/md8.habibullah", label: "Facebook", Icon: Facebook },
+                  { href: "https://wa.me/8801329876070", label: "WhatsApp", Icon: MessageCircle },
+                  { href: "mailto:md8.habibullah@gmail.com", label: "Email", Icon: Mail },
+                ].map(({ href, label, Icon }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative flex items-center rounded-full overflow-hidden bg-card border border-border/50 p-2 transition-all duration-300 hover:bg-primary hover:text-white"
+                    aria-label={label}
+                  >
+                    <Icon className="w-5 h-5 flex-shrink-0 transition-colors duration-300 group-hover:text-white" />
+                    <span className="ml-0 max-w-0 opacity-0 overflow-hidden whitespace-nowrap font-semibold transition-all duration-300 ease-in-out group-hover:ml-2 group-hover:max-w-xs group-hover:opacity-100">
+                      {label}
+                    </span>
+                  </a>
+                ))}
               </div>
             </motion.div>
+
           </div>
 
           {/* Divider */}
@@ -146,10 +115,10 @@ export default function Footer() {
             variants={containerVariants}
             className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted-foreground"
           >
-            <motion.p variants={itemVariants} className="font-mono text-xs">
+            <motion.p variants={itemVariants} className="font-bold font-mono text-xs">
               $ cd /portfolio && cat README.md
             </motion.p>
-            <motion.p variants={itemVariants}>© 2025 MD. HABIBULLAH SHARIF. All rights reserved.</motion.p>
+            <motion.p variants={itemVariants} className="font-light">© 2025 HABIBULLAH | All rights reserved.</motion.p>
           </motion.div>
         </div>
       </motion.div>
