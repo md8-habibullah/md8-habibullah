@@ -11,24 +11,25 @@
   --card-foreground: oklch(0.96 0 0);
 
   /* === YOUR NEW PRIMARY COLORS === */
-  --primary: oklch(0.56 0.14 170.5);        /* This is the new Deep Green */
-  --primary-foreground: oklch(0.98 0.01 166.8);  /* This is a light, tinted white for text on buttons */
-  
+  --primary: oklch(0.56 0.14 170.5); /* This is the new Deep Green */
+  --primary-foreground: oklch(
+    0.98 0.01 166.8
+  ); /* This is a light, tinted white for text on buttons */
+
   --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.96 0 0);
-  
-  --accent: oklch(0.56 0.14 170.5);         /* Changed to match the new Deep Green */
-  
+
+  --accent: oklch(0.56 0.14 170.5); /* Changed to match the new Deep Green */
+
   --muted: oklch(0.35 0 0);
   --muted-foreground: oklch(0.72 0 0);
   --border: oklch(0.17 0 0);
   --input: oklch(0.12 0 0);
-  
-  --ring: oklch(0.56 0.14 170.5);           /* Changed to match the new Deep Green */
-  
+
+  --ring: oklch(0.56 0.14 170.5); /* Changed to match the new Deep Green */
+
   --radius: 0.5rem;
 }
-
 
 @theme inline {
   /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
@@ -316,7 +317,6 @@
   @apply whitespace-nowrap font-semibold max-w-0 opacity-0 group-hover:max-w-xs group-hover:opacity-100 group-hover:ml-2 transition-all duration-300 ease-in-out;
 }
 
-
 /* for uptime portion  */
 
 /* --- Broadcast Dot Animation --- */
@@ -332,7 +332,7 @@
 
 /* This is the "spreading" ripple effect */
 .broadcast-dot::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -340,7 +340,7 @@
   height: 100%;
   border-radius: 50%;
   background-color: #22c55e;
-  
+
   /* The animation: name, duration, timing, repetition */
   animation: broadcast-ripple 1.5s ease-out infinite;
 }
@@ -355,4 +355,44 @@
     transform: scale(3.5); /* Makes the circle "spread" */
     opacity: 0; /* Makes the circle fade out */
   }
+}
+
+/* add hyphen or arrow effect on nav */
+.nav-link {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.nav-link::before {
+  content: "";
+  opacity: 0;
+  transform: translateX(-0.25rem);
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover::before {
+  content: "> ";
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* same hyphen or arrow for footer */
+.link-arrow {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.link-arrow::before {
+  content: "";
+  opacity: 0;
+  transform: translateX(-0.25rem);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-arrow:hover::before {
+  content: "> ";
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }

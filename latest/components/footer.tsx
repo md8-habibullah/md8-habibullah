@@ -51,25 +51,25 @@ export default function Footer() {
               <div className="space-y-2 text-sm">
                 <a
                   href="#about"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 block"
+                  className="link-arrow text-muted-foreground hover:text-primary transition-colors duration-300 block"
                 >
                   About
                 </a>
                 <a
                   href="#skills"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 block"
+                  className="link-arrow text-muted-foreground hover:text-primary transition-colors duration-300 block"
                 >
                   Skills
                 </a>
                 <a
                   href="#projects"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 block"
+                  className="link-arrow text-muted-foreground hover:text-primary transition-colors duration-300 block"
                 >
                   Projects
                 </a>
                 <a
                   href="mailto:md8.habibullah@gmail.com"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300 block"
+                  className="link-arrow text-muted-foreground hover:text-primary transition-colors duration-300 block"
                 >
                   Contact
                 </a>
