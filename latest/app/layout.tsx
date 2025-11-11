@@ -67,6 +67,14 @@ export default function RootLayout({
           `,
           }}
         />
+
+        <link
+          rel="prefetch"
+          href="https://status.habibullah.dev"
+          as="document"
+          crossOrigin="anonymous"
+        />
+
       </head>
 
       <body className="font-sans antialiased bg-background text-foreground">
