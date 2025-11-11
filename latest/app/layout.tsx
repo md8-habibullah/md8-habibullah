@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google'
 
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -56,25 +56,8 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0a0a0a" />
 
-        {/* <script>(function(w,d,s,l,i){w[l] = w[l] || [];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KC8SQW4R');</script>
- */}
         {/* Google Tag Manager */}
-        <Script
-          id="google-tag-manager-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-KCBSQW4');`,
-          }}
-        />
-
+        <GoogleTagManager gtmId="GTM-KC8SQW4R" />
 
         <script
           dangerouslySetInnerHTML={{
@@ -85,19 +68,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           }}
         />
       </head>
+
       <body className="font-sans antialiased bg-background text-foreground">
-
-        {/* <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC8SQW4R"
-          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> */}
-
-        {/* Also Google Tag Manager  */}
-
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCBSQW4" 
-      height="0" width="0" style="display:none;visibility:hidden"></iframe>`, // 👈 GTM ID here
-          }}
-        />
 
         {children}
         <Analytics />
