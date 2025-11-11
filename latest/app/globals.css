@@ -9,18 +9,26 @@
   --foreground: oklch(0.96 0 0);
   --card: oklch(0.11 0 0);
   --card-foreground: oklch(0.96 0 0);
-  --primary: oklch(0.62 0.22 29.23);
-  --primary-foreground: oklch(0.068 0 0);
+
+  /* === YOUR NEW PRIMARY COLORS === */
+  --primary: oklch(0.56 0.14 170.5);        /* This is the new Deep Green */
+  --primary-foreground: oklch(0.98 0.01 166.8);  /* This is a light, tinted white for text on buttons */
+  
   --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.96 0 0);
-  --accent: oklch(0.62 0.22 29.23);
+  
+  --accent: oklch(0.56 0.14 170.5);         /* Changed to match the new Deep Green */
+  
   --muted: oklch(0.35 0 0);
   --muted-foreground: oklch(0.72 0 0);
   --border: oklch(0.17 0 0);
   --input: oklch(0.12 0 0);
-  --ring: oklch(0.62 0.22 29.23);
+  
+  --ring: oklch(0.56 0.14 170.5);           /* Changed to match the new Deep Green */
+  
   --radius: 0.5rem;
 }
+
 
 @theme inline {
   /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
