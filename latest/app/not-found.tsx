@@ -91,7 +91,7 @@ export default function NotFound() {
 
             {/* Your HackerText component */}
             <HackerText
-              text=">_ RESOURCE_NOT_FOUND_<"
+              text=">_ RESOURCE_NOT_FOUND _<"
               className="text-2xl sm:text-3xl font-semibold text-primary"
             />
 
