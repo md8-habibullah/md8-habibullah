@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const HackerText = ({ text, className }) => {
   const [displayedText, setDisplayedText] = useState("");
-  const letters = "xh2~E#!katW~AtySywq@(1Yi+o8~L[Sw$";
+  const letters = "!@#$%^&*()-=_+[]{}|;:'<>,.?/~";
 
   useEffect(() => {
     let iteration = 0;
