@@ -68,13 +68,9 @@ export default function Header() {
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8">
-        <a href="/#" className="nav-link">Home</a>
         <a href="#about" className="nav-link">About</a>
         <a href="#skills" className="nav-link">Skills</a>
         <a href="#projects" className="nav-link">Projects</a>
-        <a href="https://status.habibullah.dev" target="_blank" rel="noopener noreferrer" className="nav-link">
-          Uptime
-        </a>
       </nav>
 
       {/* Right-side Icons */}
@@ -113,19 +109,9 @@ export default function Header() {
           md:hidden ${isMenuOpen ? "flex" : "hidden"}
         `}
       >
-        <a href="/#" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Home</a>
         <a href="#about" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>About</a>
         <a href="#skills" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Skills</a>
         <a href="#projects" className="nav-link text-lg" onClick={() => setIsMenuOpen(false)}>Projects</a>
-        <a
-          href="https://status.habibullah.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="nav-link text-lg"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          Uptime
-        </a>
       </nav>
     </header>
   )
