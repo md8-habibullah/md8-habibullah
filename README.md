@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/md8-habibullah">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:4d4dff&height=230&section=footer&text=HABIBULLAH+🚀&fontSize=68&fontColor=ffffff&animation=fadeIn&desc=Computer+Science+and+Engineering&descSize=18&descAlignY=75" alt="Header" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:4d4dff&height=230&section=footer&text=HABIBULLAH+🚀&fontSize=68&fontColor=ffffff&animation=fadeIn&desc=Computer+Science+and+Engineering&descSize=23&descAlignY=75" alt="Header" />
   </a>
 </div>
 
