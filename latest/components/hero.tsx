@@ -40,7 +40,7 @@ export default function Hero() {
 
             {/* Hacker Terminal Text */}
             <HackerText
-              text="Full-Stack Developer & Security Enthusiast"
+              text="Full-Stack Developer & Security Enthusiast__"
               className="text-xl sm:text-2xl font-semibold text-muted-foreground font-mono"
             />
           </div>
