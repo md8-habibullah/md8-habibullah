@@ -11,9 +11,13 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://habibullah.dev"),
   title: "MD. HABIBULLAH SHARIF - Full-Stack Developer & DevOps Engineer | Portfolio",
   description:
     "Full-Stack Developer & DevOps Engineer specializing in scalable applications, infrastructure automation, and Linux systems. Building secure, performant solutions with React, Node.js, Docker, and Kubernetes.",
+  alternates: {
+    canonical: '/',
+  },
   // icons: {
   //   icon: 'https://avatars.githubusercontent.com/u/149287500?v=4&s=300'
   // },
@@ -35,6 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "MD. HABIBULLAH SHARIF - Full-Stack Developer & DevOps Engineer",
     description: "Crafting scalable applications and robust infrastructure with modern technologies",
+    url: "https://habibullah.dev",
     type: "website",
     locale: "en_US",
   },
