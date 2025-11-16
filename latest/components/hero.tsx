@@ -20,7 +20,7 @@ export default function Hero() {
             <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-3xl animate-pulse-slow" />
             <img
               src="https://avatars.githubusercontent.com/u/149287500?v=4&s=300"
-              alt="MD. HABIBULLAH SHARIF - Full-Stack Developer & Security Enthusiast"
+              alt="MD. HABIBULLAH SHARIF - Full-Stack Developer & Security Enthusiast__"
               className="profile-pic animate-float-up border border-primary/50 rounded-2xl shadow-lg"
               width={224}
               height={224}
