@@ -8,7 +8,7 @@ const socialLinks = [
   { href: "https://www.linkedin.com/in/md-habibullahs", label: "LinkedIn", Icon: Linkedin },
   { href: "https://www.facebook.com/md8.habibullah", label: "Facebook", Icon: Facebook },
   { href: "https://wa.me/8801329876070", label: "WhatsApp", Icon: MessageCircle },
-  { href: "mailto:md8.habibullah@gmail.com", label: "Email", Icon: Mail },
+  { href: "mailto:hello@habibullah.dev", label: "Email", Icon: Mail },
 ]
 
 export default function Footer() {
