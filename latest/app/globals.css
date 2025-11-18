@@ -10,7 +10,7 @@
   --foreground: #1a1a1a;                    /* Dark text */
   --card: #ffffff;                          /* White cards */
   --card-foreground: #0d0d0d;               /* Dark text on cards */
-
+ 
   /* Islamic Green Primary Color (matching Bangladesh & Islamic heritage) */
   --primary: #10b981;                       /* Green button color */
   --primary-foreground: #ffffff;            /* White text on green buttons */
