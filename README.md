@@ -8,7 +8,7 @@
 
 ---
 
-### About Me
+### >> About Me
 
 I am a **Full-Stack Developer, DevOps Engineer,** and **Computer Science student** at Northern University Bangladesh. 
 
@@ -20,9 +20,10 @@ I specialize in building **secure, scalable web applications** with a heavy focu
 | **Mindset** | Security-First Approach, Infrastructure as Code, Clean Architecture. |
 | **Stats** | 50+ Open Source Contributions, 5+ Years of Experience with Linux. |
 
+*Active open-source contributor focused on optimizing backend performance, refining developer documentation, and hardening security configurations across various ecosystem tools.*
 ---
 
-### Achievements & Leadership
+### >> Achievements & Leadership
 
 - **2nd Runner-Up** – Impact Dhaka 2026 International Artificial Intelligence (AI) Hackathon held at Bangladesh University of Engineering and Technology (BUET). Engineered a voice-based civic AI assistant designed for rural communities.
 - **Assistant Robotics Secretary** – Northern University Bangladesh Computer Club (NUBCC). Directing student initiatives, multi-disciplinary technical workshops, and core robotics project management frameworks.
@@ -30,7 +31,34 @@ I specialize in building **secure, scalable web applications** with a heavy focu
 
 ---
 
-### Core Tech Stack & Tools
+### >> Featured Projects
+
+#### SMARTCLASS AI | Real-Time Classroom Engagement Tracker
+- **Description:** An AI-powered (Artificial Intelligence) and IoT-based (Internet of Things) edge computing platform that captures video feeds via microcontrollers and uses facial emotion analysis to track real-time classroom attention metrics.
+- **Tech Stack:** Python, Flask, DeepFace, MTCNN (Multi-task Cascaded Convolutional Networks), OpenCV (Open Source Computer Vision Library), SQLite, ESP32-CAM, OLED (Organic Light-Emitting Diode) Display Hardware.
+- **Links:** [Repository](https://github.com/md8-habibullah/smartclass-ai)
+
+#### NagrikAI | Voice-Based Civic Assistant
+- **Description:** An artificial intelligence-driven civic application enabling rural citizens to seamlessly report local infrastructural and public safety issues to local authorities via native voice streaming.
+- **Tech Stack:** Node.js, Python, PostgreSQL, Open-Source Artificial Intelligence Frameworks.
+
+#### Ledger Tracker | Local Encrypted Financial Vault
+- **Description:** A security-first, offline financial ecosystem operating entirely client-side inside the browser. Uses in-process relational database configurations and native browser crypto functions to protect assets with zero telemetry or network overhead.
+- **Tech Stack:** React 18, TypeScript, Vite, SQLite WASM (WebAssembly), localforage (IndexedDB local persistence engine), TanStack React Query, Tailwind CSS.
+- **Links:** [Repository](https://github.com/md8-habibullah/ledger-tracker)
+
+#### MediStore | Secure E-Commerce Backend Architecture
+- **Description:** A high-performance, enterprise-grade backend database and API (Application Programming Interface) layer optimized for medicine shops and pharmaceutical retail applications, built with clean architecture constraints.
+- **Tech Stack:** Node.js, Express, PostgreSQL, Prisma ORM (Object-Relational Mapping).
+
+#### Code Snippter | AI-Powered Workspace & Sharing Platform
+- **Description:** A collaborative developer workbench platform designed to seamlessly create, save, evaluate, and optimize code snippets using integrated neural network assistants.
+- **Tech Stack:** Next.js (App Router Architecture), TypeScript, Prisma ORM, Better Auth, Tailwind CSS, OpenRouter API (Application Programming Interface).
+- **Links:** [Repository](https://github.com/md8-habibullah/code-snippet-ai)
+
+---
+
+### >> Core Tech Stack & Tools
 
 I thrive in open-source environments and am proficient across the entire software development lifecycle, prioritizing deep infrastructure and backend performance.
 
@@ -64,7 +92,7 @@ I thrive in open-source environments and am proficient across the entire softwar
 
 ---
 
-### Select Areas of Expertise
+### >> Select Areas of Expertise
 
 Here are examples of my core competencies, demonstrating a blend of high-performance backend and infrastructure skills:
 
@@ -78,7 +106,7 @@ Here are examples of my core competencies, demonstrating a blend of high-perform
 
 ---
 
-### Let's Connect
+### >> Let's Connect
 
 I am open to collaborations and exciting opportunities. Feel free to connect or drop me an email!
 
