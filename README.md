@@ -79,7 +79,7 @@ I thrive in open-source environments and am proficient across the entire softwar
 #### Ledger Tracker | Local Encrypted Financial Vault
 - **Description:** A security-first, offline financial ecosystem operating entirely client-side inside the browser. Uses in-process relational database configurations and native browser crypto functions to protect assets with zero telemetry or network overhead.
 - **Tech Stack:** React 18, TypeScript, Vite, SQLite WASM (WebAssembly), localforage (IndexedDB local persistence engine), TanStack React Query, Tailwind CSS.
-- **Links:** [https://github.com/md8-habibullah/ledger-tracker](https://github.com/md8-habibullah/ledger-tracker)
+- **Links:** [https://ledger.habibullah.dev](https://ledger.habibullah.dev)
 
 #### MediStore | Secure E-Commerce Backend Architecture
 - **Description:** A high-performance, enterprise-grade backend database and API (Application Programming Interface) layer optimized for medicine shops and pharmaceutical retail applications, built with clean architecture constraints.
