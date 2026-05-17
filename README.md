@@ -22,6 +22,14 @@ I specialize in building **secure, scalable web applications** with a heavy focu
 
 ---
 
+### Achievements & Leadership
+
+- **2nd Runner-Up** – Impact Dhaka 2026 International Artificial Intelligence (AI) Hackathon held at Bangladesh University of Engineering and Technology (BUET). Engineered a voice-based civic AI assistant designed for rural communities.
+- **Assistant Robotics Secretary** – Northern University Bangladesh Computer Club (NUBCC). Directing student initiatives, multi-disciplinary technical workshops, and core robotics project management frameworks.
+- **Bronze Medalist** – World Invention Competition & Exhibition 2026 (WICE) – Bangladesh National Round. Co-engineered **SMARTCLASS AI: Emotion Detection & Learning Engagement Analyzer** within the Information Technology (IT) & Robotics Segment, securing advancement to the International Round in Malaysia.
+
+---
+
 ### Core Tech Stack & Tools
 
 I thrive in open-source environments and am proficient across the entire software development lifecycle, prioritizing deep infrastructure and backend performance.
