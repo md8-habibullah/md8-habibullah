@@ -36,7 +36,7 @@ I specialize in building **secure, scalable web applications** with a heavy focu
 #### SMARTCLASS AI | Real-Time Classroom Engagement Tracker
 - **Description:** An AI-powered (Artificial Intelligence) and IoT-based (Internet of Things) edge computing platform that captures video feeds via microcontrollers and uses facial emotion analysis to track real-time classroom attention metrics.
 - **Tech Stack:** Python, Flask, DeepFace, MTCNN (Multi-task Cascaded Convolutional Networks), OpenCV (Open Source Computer Vision Library), SQLite, ESP32-CAM, OLED (Organic Light-Emitting Diode) Display Hardware.
-- **Links:** [Repository](https://github.com/md8-habibullah/smartclass-ai)
+- **Links:** [https://github.com/md8-habibullah/smartclass-ai](https://github.com/md8-habibullah/smartclass-ai)
 
 #### NagrikAI | Voice-Based Civic Assistant
 - **Description:** An artificial intelligence-driven civic application enabling rural citizens to seamlessly report local infrastructural and public safety issues to local authorities via native voice streaming.
@@ -45,7 +45,7 @@ I specialize in building **secure, scalable web applications** with a heavy focu
 #### Ledger Tracker | Local Encrypted Financial Vault
 - **Description:** A security-first, offline financial ecosystem operating entirely client-side inside the browser. Uses in-process relational database configurations and native browser crypto functions to protect assets with zero telemetry or network overhead.
 - **Tech Stack:** React 18, TypeScript, Vite, SQLite WASM (WebAssembly), localforage (IndexedDB local persistence engine), TanStack React Query, Tailwind CSS.
-- **Links:** [Repository](https://github.com/md8-habibullah/ledger-tracker)
+- **Links:** [https://github.com/md8-habibullah/ledger-tracker](https://github.com/md8-habibullah/ledger-tracker)
 
 #### MediStore | Secure E-Commerce Backend Architecture
 - **Description:** A high-performance, enterprise-grade backend database and API (Application Programming Interface) layer optimized for medicine shops and pharmaceutical retail applications, built with clean architecture constraints.
@@ -54,7 +54,7 @@ I specialize in building **secure, scalable web applications** with a heavy focu
 #### Code Snippter | AI-Powered Workspace & Sharing Platform
 - **Description:** A collaborative developer workbench platform designed to seamlessly create, save, evaluate, and optimize code snippets using integrated neural network assistants.
 - **Tech Stack:** Next.js (App Router Architecture), TypeScript, Prisma ORM, Better Auth, Tailwind CSS, OpenRouter API (Application Programming Interface).
-- **Links:** [Repository](https://github.com/md8-habibullah/code-snippet-ai)
+- **Links:** [https://github.com/md8-habibullah/code-snippet-ai](https://github.com/md8-habibullah/code-snippet-ai)
 
 ---
 
