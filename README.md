@@ -75,7 +75,7 @@ I thrive in open-source environments and am proficient across the entire softwar
 #### Code Snippter | AI-Powered Workspace & Sharing Platform
 - **Description:** A collaborative developer workbench platform designed to seamlessly create, save, evaluate, and optimize code snippets using integrated neural network assistants.
 - **Tech Stack:** Next.js (App Router Architecture), TypeScript, Prisma ORM, Better Auth, Tailwind CSS, OpenRouter API (Application Programming Interface).
-- **Links:** [https : / / code-snippet-go](https://code-snippet-go.netlify.app/)
+- **Links:** [https://go.habibullah.dev/code-snippet](https://code-snippet-go.netlify.app/)
 
 #### SMARTCLASS AI | Real-Time Classroom Engagement Tracker
 - **Description:** An AI-powered (Artificial Intelligence) and IoT-based (Internet of Things) edge computing platform that captures video feeds via microcontrollers and uses facial emotion analysis to track real-time classroom attention metrics.
