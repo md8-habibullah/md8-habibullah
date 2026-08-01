@@ -1,0 +1,56 @@
+name: Sync profile README
+
+# Three ways in:
+#   repository_dispatch — fired by the habibullah.dev CMS the moment content is
+#     saved, so the profile updates within about a minute of an edit;
+#   schedule — a daily safety net that also picks up changes the CMS can't know
+#     about, such as new stars, new repositories and new Dev.to posts;
+#   workflow_dispatch — manual run from the Actions tab.
+on:
+  repository_dispatch:
+    types: [cms-updated]
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-profile
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # Never run on forks: they have no secrets and no business pushing commits.
+    if: github.repository == 'md8-habibullah/md8-habibullah'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Regenerate README
+        env:
+          # Read-only Atlas user. Absent or unreachable, the script falls back to
+          # the public habibullah.dev/llms.txt feed.
+          MONGODB_URI_READONLY: ${{ secrets.MONGODB_URI_READONLY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/sync-readme.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "README already current — nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: sync profile README from portfolio, GitHub and Dev.to"
+          git push
