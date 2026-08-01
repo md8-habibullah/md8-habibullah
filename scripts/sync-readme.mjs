@@ -481,6 +481,20 @@ function renderRoadmap(cms) {
 }
 
 /**
+ * A short, stable stamp for the newest CMS edit. Returns null when the CMS is
+ * unavailable, in which case the card URLs simply carry no version.
+ */
+function cmsVersion(cms) {
+  if (!cms) return null;
+  let newest = 0;
+  for (const doc of Object.values(cms)) {
+    const at = Date.parse(doc?.updatedAt ?? '');
+    if (Number.isFinite(at) && at > newest) newest = at;
+  }
+  return newest ? Math.floor(newest / 1000).toString(36) : null;
+}
+
+/**
  * Third-party stat widgets, probed before use.
  *
  * These are free community deployments that go down without warning — at the
@@ -528,17 +542,24 @@ async function renderWidgets() {
  * exist, so the profile never shows broken images while the portfolio side of
  * the change is still in review.
  */
-async function renderCards() {
+async function renderCards(cms) {
+  // GitHub proxies every image through Camo, which caches aggressively. Stamping
+  // the URL with the newest CMS updatedAt means a real content edit produces a
+  // new URL, so the card refreshes immediately instead of serving a stale copy
+  // for the life of the cache TTL.
+  const stamp = cmsVersion(cms);
+  const suffix = stamp ? `&v=${stamp}` : '';
+
   const types = ['stats', 'experience', 'skills'];
   const blocks = [];
   for (const type of types) {
     const url = `${SITE}/api/card/${type}`;
-    if (!(await isLinkAlive(`${url}?theme=light`))) continue;
+    if (!(await isLinkAlive(`${url}?theme=light${suffix}`))) continue;
     blocks.push(
       [
         '<picture>',
-        `  <source media="(prefers-color-scheme: dark)" srcset="${url}?theme=dark" />`,
-        `  <img alt="${type} card" src="${url}?theme=light" />`,
+        `  <source media="(prefers-color-scheme: dark)" srcset="${url}?theme=dark${suffix}" />`,
+        `  <img alt="${type} card" src="${url}?theme=light${suffix}" />`,
         '</picture>',
       ].join('\n'),
     );
@@ -611,7 +632,7 @@ async function main() {
     warn('Dev.to unreachable — articles left as committed');
   }
 
-  regions.push(['WIDGETS', await renderWidgets()], ['CARDS', await renderCards()]);
+  regions.push(['WIDGETS', await renderWidgets()], ['CARDS', await renderCards(cms)]);
 
   for (const [name, body] of regions) {
     if (body == null || body === '') continue;
