@@ -319,6 +319,77 @@ function renderAbout(cms) {
   return out.join('\n');
 }
 
+/**
+ * The header banner's caption comes from the CMS too, so a change of job or title
+ * doesn't leave a stale headline at the very top of the profile.
+ */
+function renderBanner(cms) {
+  const subtitle = cms.hero_content?.subtitle || '';
+  // e.g. "Full-Stack Engineer @ Octopi Digital || Backend Specialist --" -> the
+  // part before the separator, without trailing punctuation.
+  const caption =
+    // Unicode escapes, not literal dashes: a literal en/em dash inside a
+    // character class is fragile if the file is ever reformatted.
+    oneLine(String(subtitle).split('||')[0])
+      .replace(/[\u2013\u2014|\-]+$/, '')
+      .trim() ||
+    'Full-Stack Engineer';
+
+  const banner =
+    'https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:4d4dff&height=230' +
+    '&section=footer&text=HABIBULLAH+%F0%9F%9A%80&fontSize=68&fontColor=ffffff&animation=fadeIn' +
+    `&desc=${encodeURIComponent(caption)}&descSize=20&descAlignY=75`;
+
+  return [
+    '<div align="center">',
+    '  <a href="https://habibullah.dev">',
+    `    <img src="${banner}" alt="MD. Habibullah Sharif - ${caption}" />`,
+    '  </a>',
+    '</div>',
+  ].join('\n');
+}
+
+/** Shields.io styling per known social label; anything unknown still renders. */
+const SOCIAL_STYLE = {
+  github: { color: '181717', logo: 'github', logoColor: '60a5fa' },
+  linkedin: { color: '0077B5', logo: 'linkedin' },
+  'dev.to': { color: '0A0A0A', logo: 'dev.to' },
+  whatsapp: { color: '25D366', logo: 'whatsapp' },
+  email: { color: 'c14438', logo: 'gmail' },
+  medium: { color: '000000', logo: 'medium' },
+  facebook: { color: '1877F2', logo: 'facebook' },
+  discord: { color: '5865F2', logo: 'discord' },
+  portfolio: { color: '0EA5E9', logo: 'google-earth' },
+};
+
+async function renderSocials(cms, field) {
+  const socials = cms.global_content?.[field];
+  if (!Array.isArray(socials) || socials.length === 0) return null;
+
+  // The portfolio itself is not in the socials list, but it belongs on a GitHub
+  // profile - it is the one link the whole README is derived from.
+  const entries = [{ label: 'Portfolio', href: SITE }, ...socials];
+
+  const badges = [];
+  for (const s of entries) {
+    const label = String(s.label || '').trim();
+    if (!label) continue;
+    const href = String(s.href || '').trim();
+    // mailto: links can't be probed; everything else must resolve.
+    if (!href.startsWith('mailto:') && !(await isLinkAlive(href))) continue;
+
+    const style = SOCIAL_STYLE[label.toLowerCase()] || { color: '4d4dff' };
+    const params = [`style=for-the-badge`];
+    if (style.logo) params.push(`logo=${style.logo}`);
+    params.push(`logoColor=${style.logoColor || 'white'}`);
+    const badge = `https://img.shields.io/badge/${encodeURIComponent(label)}-${style.color}?${params.join('&')}`;
+    badges.push(`  <a href="${href}"><img src="${badge}" alt="${label}" /></a>`);
+  }
+
+  if (badges.length === 0) return null;
+  return `<p align="center">\n${badges.join('\n')}\n</p>`;
+}
+
 function renderExperience(cms) {
   const list = cms.experience_content?.experiences || [];
   if (list.length === 0) return null;
@@ -603,6 +674,9 @@ async function main() {
 
   if (cms) {
     regions.push(
+      ['BANNER', renderBanner(cms)],
+      ['SOCIALS', await renderSocials(cms, 'socials')],
+      ['FOOTERSOCIALS', await renderSocials(cms, 'footerSocials')],
       ['ABOUT', renderAbout(cms)],
       ['EXPERIENCE', renderExperience(cms)],
       ['SKILLS', renderSkills(cms)],
