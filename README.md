@@ -27,13 +27,15 @@
 ### >> About Me
 
 <!-- SYNC:ABOUT:START -->
+
 > Spinning up backend architecture engines...
 
 I am **Habibullah**, a Full-Stack Engineer at Octopi Digital specializing in backend architectures. Engineered to build **secure, high-performance systems**, my core kernel logic leverages AI acceleration to maximize development velocity, streamline automated workflows, and eliminate structural inefficiencies.
 
 Building scalable, secure, and high-performance server-side architectures at Octopi Digital. Combining full-stack expertise with a heavy focus on backend engineering, DevOps automation, and a security-first mindset.
 
-> *Accelerate with AI, code with purpose, build with ethics...*
+> _Accelerate with AI, code with purpose, build with ethics..._
+
 <!-- SYNC:ABOUT:END -->
 
 ---
@@ -41,31 +43,35 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 ### >> Where I Work
 
 <!-- SYNC:EXPERIENCE:START -->
-| Role | Organisation | Period | Location |
-| :--- | :--- | :--- | :--- |
+
+| Role                                         | Organisation       | Period                         | Location           |
+| :------------------------------------------- | :----------------- | :----------------------------- | :----------------- |
 | **Software Engineer (Backend & Full-Stack)** | Octopi Digital LLC | Jul 2026 - Present · full time | Dhaka, BD (Onsite) |
-| **Web Developer & Security Specialist** | Neurootix | Aug 2025 - Present · part time | Dhaka, BD (Hybrid) |
-| **Assistant Robotics Secretary** | NUB Computer Club | Jul 2025 - Present · part time | Dhaka, BD |
+| **Web Developer & Security Specialist**      | Neurootix          | Aug 2025 - Present · part time | Dhaka, BD (Hybrid) |
+| **Assistant Robotics Secretary**             | NUB Computer Club  | Jul 2025 - Present · part time | Dhaka, BD          |
+
 <!-- SYNC:EXPERIENCE:END -->
 
 ---
 
 ### >> Achievements & Leadership
 
-- **2nd Runner-Up** — Impact Dhaka 2026 International Artificial Intelligence Hackathon, held at Bangladesh University of Engineering and Technology (BUET). Engineered a voice-based civic AI assistant for rural communities.
-- **Bronze Medalist** — World Invention Competition & Exhibition 2026 (WICE), Bangladesh National Round. Co-engineered **SMARTCLASS AI: Emotion Detection & Learning Engagement Analyzer** in the IT & Robotics segment, advancing to the International Round in Malaysia.
-- **Assistant Robotics Secretary** — Northern University Bangladesh Computer Club (NUBCC). Directing student initiatives, technical workshops, and robotics project management.
+- **2nd Runner-Up** - Impact Dhaka 2026 International Artificial Intelligence Hackathon, held at Bangladesh University of Engineering and Technology (BUET). Engineered a voice-based civic AI assistant for rural communities.
+- **Bronze Medalist** - World Invention Competition & Exhibition 2026 (WICE), Bangladesh National Round. Co-engineered **SMARTCLASS AI: Emotion Detection & Learning Engagement Analyzer** in the IT & Robotics segment, advancing to the International Round in Malaysia.
+- **Assistant Robotics Secretary** - Northern University Bangladesh Computer Club (NUBCC). Directing student initiatives, technical workshops, and robotics project management.
 
 ---
 
 ### >> GitHub in Numbers
 
 <!-- SYNC:STATS:START -->
-| Stars earned | Original repos | Followers | Public repos |
-| :---: | :---: | :---: | :---: |
-| **129** | **52** | **48** | **298** |
 
-**Most-used languages** — `TypeScript 33%` `JavaScript 31%` `HTML 8%` `C 8%` `Shell 8%` `Python 5%` `C++ 5%` `MDX 3%`
+| Stars earned | Original repos | Followers | Public repos |
+| :----------: | :------------: | :-------: | :----------: |
+|   **129**    |     **52**     |  **48**   |   **298**    |
+
+**Most-used languages** - `TypeScript 33%` `JavaScript 31%` `HTML 8%` `C 8%` `Shell 8%` `Python 5%` `C++ 5%` `MDX 3%`
+
 <!-- SYNC:STATS:END -->
 
 <!-- SYNC:WIDGETS:START -->
@@ -82,6 +88,7 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 ### >> Core Tech Stack
 
 <!-- SYNC:SKILLS:START -->
+
 **Frontend Stack**  
 `React.js / Next.js` `TypeScript` `Tailwind CSS` `AI-Augmented UI`
 
@@ -102,6 +109,7 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 
 **Also worked with**  
 `React` `TypeScript` `Node js` `Next js` `Python` `Go` `JavaScript` `Tailwind` `GraphQL` `Docker` `Kubernetes` `Aws` `Azure` `PostgreSQL` `MongoDB` `Redis` `MySQL` `Firebase` `Rust` `C++` `PHP` `Laravel` `Vue js` `Angular` `Svelte` `Ruby` `Rails` `Django` `Flask` `Spring`
+
 <!-- SYNC:SKILLS:END -->
 
 ---
@@ -109,6 +117,7 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 ### >> Featured Projects
 
 <!-- SYNC:PROJECTS:START -->
+
 #### Neurootix_Rebuild
 
 Engineered a high-performance full-stack commercial platform for an IT agency using Next.js. Integrated Hashnode Headless API for dynamic SEO-optimized blogging and established robust automated CI/CD pipelines. Delivered a 100% production-ready system that increased client engagement metrics and organic search visibility.
@@ -132,6 +141,7 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 `Node.js` `PostgreSQL` `Express` `Backend`
 
 [Source](https://github.com/md8-habibullah/vehicle_rental)
+
 <!-- SYNC:PROJECTS:END -->
 
 ---
@@ -139,14 +149,16 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 ### >> Top Repositories
 
 <!-- SYNC:TOPREPOS:START -->
-| Repository | ★ | Language | About |
-| :--- | :---: | :--- | :--- |
-| [top-github-repos-list](https://github.com/md8-habibullah/top-github-repos-list) | 100 | — | A curated list of top open-source GitHub repositories across various categories to help developers discover… |
-| [GPG-keys-with-GitHub](https://github.com/md8-habibullah/GPG-keys-with-GitHub) | 5 | — | A step-by-step ultimate guide to generating, configuring, and using GPG keys with Git and GitHub to sign co… |
-| [telegram-bot-dev-resources](https://github.com/md8-habibullah/telegram-bot-dev-resources) | 2 | — | Curated list of Telegram Bot API libraries, frameworks, and SDKs in every major programming language. Perfe… |
-| [md8-habibullah](https://github.com/md8-habibullah/md8-habibullah) | 1 | HTML | Full-Stack Engineer \| DevOps & Security Specialist |
-| [awesome-senior-engineer-resources](https://github.com/md8-habibullah/awesome-senior-engineer-resources) | 1 | — | 🧠 300+ advanced open-source repos for senior & staff engineers - distributed systems, databases, Kubernete… |
-| [awesome-learn-to-code](https://github.com/md8-habibullah/awesome-learn-to-code) | 1 | — | 🌱 157 beginner-friendly open-source repos to learn to code - roadmaps, free courses & books, project-based… |
+
+| Repository                                                                                               |  ★  | Language | About                                                                                                        |
+| :------------------------------------------------------------------------------------------------------- | :-: | :------- | :----------------------------------------------------------------------------------------------------------- |
+| [top-github-repos-list](https://github.com/md8-habibullah/top-github-repos-list)                         | 100 | -        | A curated list of top open-source GitHub repositories across various categories to help developers discover… |
+| [GPG-keys-with-GitHub](https://github.com/md8-habibullah/GPG-keys-with-GitHub)                           |  5  | -        | A step-by-step ultimate guide to generating, configuring, and using GPG keys with Git and GitHub to sign co… |
+| [telegram-bot-dev-resources](https://github.com/md8-habibullah/telegram-bot-dev-resources)               |  2  | -        | Curated list of Telegram Bot API libraries, frameworks, and SDKs in every major programming language. Perfe… |
+| [md8-habibullah](https://github.com/md8-habibullah/md8-habibullah)                                       |  1  | HTML     | Full-Stack Engineer \| DevOps & Security Specialist                                                          |
+| [awesome-senior-engineer-resources](https://github.com/md8-habibullah/awesome-senior-engineer-resources) |  1  | -        | 🧠 300+ advanced open-source repos for senior & staff engineers - distributed systems, databases, Kubernete… |
+| [awesome-learn-to-code](https://github.com/md8-habibullah/awesome-learn-to-code)                         |  1  | -        | 🌱 157 beginner-friendly open-source repos to learn to code - roadmaps, free courses & books, project-based… |
+
 <!-- SYNC:TOPREPOS:END -->
 
 ---
@@ -154,7 +166,9 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 ### >> What I Build With
 
 <!-- SYNC:TOPICS:START -->
+
 `react` `nodejs` `awesome-list` `javascript` `typescript` `bangladesh` `curated-list` `developer-tools` `devops` `nextjs` `open-source` `python` `tailwindcss` `automation` `awesome` `backend` `bash` `better-auth` `civic-tech` `collaboration` `computer-science` `cybersecurity` `daisyui` `drawing-tool` `education` `fire-alert` `frontend` `gas-leak` `git` `github`
+
 <!-- SYNC:TOPICS:END -->
 
 ---
@@ -162,13 +176,15 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 ### >> Latest Writing
 
 <!-- SYNC:ARTICLES:START -->
-- **[Cut the Noise: The 10 Web Frameworks That Actually Matter in 2026](https://dev.to/md8_habibullah/stop-picking-the-wrong-framework-here-are-the-only-10-that-matter-in-2026-32gm)** — 2026-06-02 · 8 min read
-- **[Code Never Runs First - The Lexer and Parser Do](https://dev.to/md8_habibullah/code-never-runs-first-the-lexer-and-parser-do-cg4)** — 2026-05-27 · 3 min read
-- **[6‑Hour Hackathon Rescue: Dying API, rm -rf, and a Last‑Minute Win 🏆](https://dev.to/md8_habibullah/we-had-6-hours-a-dying-api-and-im-ran-rm-rf-we-still-won-gdf)** — 2026-04-14 · 9 min read
-- **[Brave Browser Is the King in 2025–2026. There Is No Second Option](https://dev.to/md8_habibullah/brave-browser-is-the-king-in-2025-2026-there-is-no-second-option-dk8)** — 2026-03-29 · 5 min read
-- **[Run Oracle SQL on Any PC Without the Nightmare (Docker + Linux Way)](https://dev.to/md8_habibullah/run-oracle-sql-on-any-pc-without-the-nightmare-docker-linux-way-57nk)** — 2026-03-17 · 9 min read
+
+- **[Cut the Noise: The 10 Web Frameworks That Actually Matter in 2026](https://dev.to/md8_habibullah/stop-picking-the-wrong-framework-here-are-the-only-10-that-matter-in-2026-32gm)** - 2026-06-02 · 8 min read
+- **[Code Never Runs First - The Lexer and Parser Do](https://dev.to/md8_habibullah/code-never-runs-first-the-lexer-and-parser-do-cg4)** - 2026-05-27 · 3 min read
+- **[6‑Hour Hackathon Rescue: Dying API, rm -rf, and a Last‑Minute Win 🏆](https://dev.to/md8_habibullah/we-had-6-hours-a-dying-api-and-im-ran-rm-rf-we-still-won-gdf)** - 2026-04-14 · 9 min read
+- **[Brave Browser Is the King in 2025–2026. There Is No Second Option](https://dev.to/md8_habibullah/brave-browser-is-the-king-in-2025-2026-there-is-no-second-option-dk8)** - 2026-03-29 · 5 min read
+- **[Run Oracle SQL on Any PC Without the Nightmare (Docker + Linux Way)](https://dev.to/md8_habibullah/run-oracle-sql-on-any-pc-without-the-nightmare-docker-linux-way-57nk)** - 2026-03-17 · 9 min read
 
 <sub>22 articles published on [Dev.to](https://dev.to/md8_habibullah).</sub>
+
 <!-- SYNC:ARTICLES:END -->
 
 ---
@@ -176,7 +192,9 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 ### >> Free Tools I Host
 
 <!-- SYNC:KITS:START -->
+
 Prayer Times · System Info. · IP Subnet · QR Code · GenPass · Randomizer · Currency Conv. · Age Calc.
+
 <!-- SYNC:KITS:END -->
 
 ---
@@ -184,13 +202,15 @@ Prayer Times · System Info. · IP Subnet · QR Code · GenPass · Randomizer ·
 ### >> Learning Roadmap
 
 <!-- SYNC:ROADMAP:START -->
-| When | Focus | Detail |
-| :--- | :--- | :--- |
-| **Q2 2026** | AWS Infrastructure Mastery | Moving from console to code. Implementing multi-region VPC peering, Transit Gateways, and immutable infrastructure patterns. `Terraform` `CloudFormation` `VPC` `Lambda` |
-| **Q3 2026** | Kubernetes Orchestration | Deep dive into cluster management. Building self-healing pods, setting up Ingress Controllers, and Service Mesh architecture. `Docker` `K8s` `Helm` `Istio` |
-| **Q4 2026** | Offensive Security OSCP | Ethical Hacking certification prep. Advanced buffer overflows, privilege escalation, and active directory exploitation. `Black Arch` `Metasploit` `Recon` `Pentesting` |
-| **2027** | AI DevOps Integration | Building automated pipelines that self-correct using LLM logic. AI-driven log analysis and anomaly detection. `LLM Ops` `Python` `VectorDB` `Data Visualization` |
-| **2027+** | Future Tech Exploration | Exploring emerging technologies like quantum computing, blockchain scalability solutions, and next-gen AI frameworks. `Quantum` `Blockchain` `AI Frameworks` `Edge Computing` |
+
+| When        | Focus                      | Detail                                                                                                                                                                        |
+| :---------- | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Q2 2026** | AWS Infrastructure Mastery | Moving from console to code. Implementing multi-region VPC peering, Transit Gateways, and immutable infrastructure patterns. `Terraform` `CloudFormation` `VPC` `Lambda`      |
+| **Q3 2026** | Kubernetes Orchestration   | Deep dive into cluster management. Building self-healing pods, setting up Ingress Controllers, and Service Mesh architecture. `Docker` `K8s` `Helm` `Istio`                   |
+| **Q4 2026** | Offensive Security OSCP    | Ethical Hacking certification prep. Advanced buffer overflows, privilege escalation, and active directory exploitation. `Black Arch` `Metasploit` `Recon` `Pentesting`        |
+| **2027**    | AI DevOps Integration      | Building automated pipelines that self-correct using LLM logic. AI-driven log analysis and anomaly detection. `LLM Ops` `Python` `VectorDB` `Data Visualization`              |
+| **2027+**   | Future Tech Exploration    | Exploring emerging technologies like quantum computing, blockchain scalability solutions, and next-gen AI frameworks. `Quantum` `Blockchain` `AI Frameworks` `Edge Computing` |
+
 <!-- SYNC:ROADMAP:END -->
 
 <!-- SYNC:CARDS:START -->
@@ -200,7 +220,7 @@ Prayer Times · System Info. · IP Subnet · QR Code · GenPass · Randomizer ·
 
 ### >> Let's Connect
 
-I am open to collaboration and interesting problems — backend architecture, AI automation, or infrastructure that has to stay up.
+I am open to collaboration and interesting problems - backend architecture, AI automation, or infrastructure that has to stay up.
 
 <p align="center">
   <a href="https://github.com/md8-habibullah"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=60a5fa" alt="GitHub" /></a>
@@ -219,5 +239,5 @@ I am open to collaboration and interesting problems — backend architecture, AI
 I'm naturally calm, but I light up when it comes to Linux, writing code, or diving into deep topics. My happy place? A dark terminal, a cup of tea, and Qur'an recitation in the background.
 
 <div align="center">
-  <sub>This profile keeps itself current — content syncs automatically from <a href="https://habibullah.dev">habibullah.dev</a>, the GitHub API and Dev.to.</sub>
+  <sub>This profile keeps itself current - content syncs automatically from <a href="https://habibullah.dev">habibullah.dev</a>, the GitHub API and Dev.to.</sub>
 </div>

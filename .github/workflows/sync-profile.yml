@@ -1,16 +1,16 @@
 name: Sync profile README
 
 # Three ways in:
-#   repository_dispatch — fired by the habibullah.dev CMS the moment content is
+#   repository_dispatch - fired by the habibullah.dev CMS the moment content is
 #     saved, so the profile updates within about a minute of an edit;
-#   schedule — a daily safety net that also picks up changes the CMS can't know
+#   schedule - a daily safety net that also picks up changes the CMS can't know
 #     about, such as new stars, new repositories and new Dev.to posts;
-#   workflow_dispatch — manual run from the Actions tab.
+#   workflow_dispatch - manual run from the Actions tab.
 on:
   repository_dispatch:
     types: [cms-updated]
   schedule:
-    - cron: '0 3 * * *'
+    - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,7 +30,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
           cache: npm
 
       - run: npm ci
@@ -46,7 +46,7 @@ jobs:
       - name: Commit if changed
         run: |
           if git diff --quiet -- README.md; then
-            echo "README already current — nothing to commit."
+            echo "README already current - nothing to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
