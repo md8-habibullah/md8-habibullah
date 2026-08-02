@@ -11,7 +11,7 @@
 <!-- SYNC:BANNER:START -->
 <div align="center">
   <a href="https://habibullah.dev">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:4d4dff&height=230&section=footer&text=HABIBULLAH+%F0%9F%9A%80&fontSize=68&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20Engineer%20%40%20Octopi%20Digital&descSize=20&descAlignY=75" alt="MD. Habibullah Sharif - Full-Stack Engineer @ Octopi Digital" />
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e1e2e,100:4d4dff&height=230&section=footer&text=HABIBULLAH+%F0%9F%9A%80&fontSize=68&fontColor=ffffff&animation=fadeIn&desc=Full-Stack%20Engineer&descSize=20&descAlignY=75" alt="MD. Habibullah Sharif - Full-Stack Engineer" />
   </a>
 </div>
 <!-- SYNC:BANNER:END -->
@@ -32,13 +32,7 @@
 ### >> About Me
 
 <!-- SYNC:ABOUT:START -->
-> Spinning up backend architecture engines...
-
-I am **Habibullah**, a Full-Stack Engineer at Octopi Digital specializing in backend architectures. Engineered to build **secure, high-performance systems**, my core kernel logic leverages AI acceleration to maximize development velocity, streamline automated workflows, and eliminate structural inefficiencies.
-
-Building scalable, secure, and high-performance server-side architectures at Octopi Digital. Combining full-stack expertise with a heavy focus on backend engineering, DevOps automation, and a security-first mindset.
-
-> *Accelerate with AI, code with purpose, build with ethics...*
+Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engineer at Octopi Digital specializing in backend architectures. Engineered to build secure, high-performance systems, my core kernel logic leverages AI acceleration to maximize development velocity, streamline automated workflows, and eliminate structural inefficiencies.
 <!-- SYNC:ABOUT:END -->
 
 ---
@@ -48,9 +42,9 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 <!-- SYNC:EXPERIENCE:START -->
 | Role | Organisation | Period | Location |
 | :--- | :--- | :--- | :--- |
-| **Software Engineer (Backend & Full-Stack)** | Octopi Digital LLC | Jul 2026 - Present · full time | Dhaka, BD (Onsite) |
-| **Web Developer & Security Specialist** | Neurootix | Aug 2025 - Present · part time | Dhaka, BD (Hybrid) |
-| **Assistant Robotics Secretary** | NUB Computer Club | Jul 2025 - Present · part time | Dhaka, BD |
+| **Software Engineer (Backend & Full-Stack)** | Octopi Digital LLC | Jul 2026 - Present · full-time |  |
+| **Web Developer & Security Specialist** | Neurootix | Aug 2025 - Present · part-time |  |
+| **Assistant Robotics Secretary** | NUB Computer Club | Jul 2025 - Present · part-time |  |
 <!-- SYNC:EXPERIENCE:END -->
 
 ---
@@ -77,6 +71,7 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 <div align="center">
 
   <img src="https://streak-stats.demolab.com/?user=md8-habibullah&hide_border=true&background=00000000&stroke=888888&ring=4d4dff&fire=4d4dff&currStreakLabel=4d4dff&sideLabels=888888&dates=888888&currStreakNum=4d4dff&sideNums=4d4dff" alt="Contribution streak" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=md8-habibullah&bg_color=00000000&color=888888&line=4d4dff&point=4d4dff&area=true&hide_border=true" alt="Contribution activity" />
 
 </div>
 <!-- SYNC:WIDGETS:END -->
@@ -103,9 +98,6 @@ Building scalable, secure, and high-performance server-side architectures at Oct
 
 **Engineering & Strategy**  
 `Client-Facing Strategy` `Technical Architecture` `Rapid Prototyping` `Open Source Contribution`
-
-**Also worked with**  
-`React` `TypeScript` `Node js` `Next js` `Python` `Go` `JavaScript` `Tailwind` `GraphQL` `Docker` `Kubernetes` `Aws` `Azure` `PostgreSQL` `MongoDB` `Redis` `MySQL` `Firebase` `Rust` `C++` `PHP` `Laravel` `Vue js` `Angular` `Svelte` `Ruby` `Rails` `Django` `Flask` `Spring`
 <!-- SYNC:SKILLS:END -->
 
 ---
@@ -127,15 +119,13 @@ Developed a stealth-oriented key capture utility for advanced forensic system an
 
 `C++` `Security` `Forensics` `Low-Level`
 
-[Source](https://github.com/md8-habibullah/Shadow-Logger)
+[Live](https://github.com/md8-habibullah/Shadow-Logger)
 
 #### Vehicle_Rental_API
 
 Designed and deployed a scalable backend REST API using Node.js and Express to manage complex business logic for vehicle rentals. Implemented secure JWT Role-Based Access Control (RBAC), automated dynamic pricing algorithms, and a highly normalized PostgreSQL inventory database handling thousands of potential daily requests.
 
 `Node.js` `PostgreSQL` `Express` `Backend`
-
-[Source](https://github.com/md8-habibullah/vehicle_rental)
 <!-- SYNC:PROJECTS:END -->
 
 ---
@@ -180,7 +170,7 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 ### >> Free Tools I Host
 
 <!-- SYNC:KITS:START -->
-Prayer Times · System Info. · IP Subnet · QR Code · GenPass · Randomizer · Currency Conv. · Age Calc.
+[Prayer Times](https://habibullah.dev/kits/prayer) · [System Info.](https://habibullah.dev/kits/system) · [IP Subnet](https://habibullah.dev/kits/subnet) · [QR Code](https://habibullah.dev/kits/qrcode) · [GenPass](https://habibullah.dev/kits/password) · [Randomizer](https://habibullah.dev/kits/picker) · [Currency Conv.](https://habibullah.dev/kits/currency) · [Age Calc.](https://habibullah.dev/kits/age)
 <!-- SYNC:KITS:END -->
 
 ---
@@ -190,14 +180,30 @@ Prayer Times · System Info. · IP Subnet · QR Code · GenPass · Randomizer ·
 <!-- SYNC:ROADMAP:START -->
 | When | Focus | Detail |
 | :--- | :--- | :--- |
-| **Q2 2026** | AWS Infrastructure Mastery | Moving from console to code. Implementing multi-region VPC peering, Transit Gateways, and immutable infrastructure patterns. `Terraform` `CloudFormation` `VPC` `Lambda` |
-| **Q3 2026** | Kubernetes Orchestration | Deep dive into cluster management. Building self-healing pods, setting up Ingress Controllers, and Service Mesh architecture. `Docker` `K8s` `Helm` `Istio` |
-| **Q4 2026** | Offensive Security OSCP | Ethical Hacking certification prep. Advanced buffer overflows, privilege escalation, and active directory exploitation. `Black Arch` `Metasploit` `Recon` `Pentesting` |
-| **2027** | AI DevOps Integration | Building automated pipelines that self-correct using LLM logic. AI-driven log analysis and anomaly detection. `LLM Ops` `Python` `VectorDB` `Data Visualization` |
-| **2027+** | Future Tech Exploration | Exploring emerging technologies like quantum computing, blockchain scalability solutions, and next-gen AI frameworks. `Quantum` `Blockchain` `AI Frameworks` `Edge Computing` |
+| **Q2 2026** | AWS Infrastructure Mastery | Moving from console to code. Implementing multi-region VPC peering, Transit Gateways, and immutable infrastructure patterns.  |
+| **Q3 2026** | Kubernetes Orchestration | Deep dive into cluster management. Building self-healing pods, setting up Ingress Controllers, and Service Mesh architecture.  |
+| **Q4 2026** | Offensive Security OSCP | Ethical Hacking certification prep. Advanced buffer overflows, privilege escalation, and active directory exploitation.  |
+| **2027** | AI DevOps Integration | Building automated pipelines that self-correct using LLM logic. AI-driven log analysis and anomaly detection.  |
+| **2027+** | Future Tech Exploration | Exploring emerging technologies like quantum computing, blockchain scalability solutions, and next-gen AI frameworks.  |
 <!-- SYNC:ROADMAP:END -->
 
 <!-- SYNC:CARDS:START -->
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://habibullah.dev/api/card/stats?theme=dark" />
+  <img alt="stats card" src="https://habibullah.dev/api/card/stats?theme=light" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://habibullah.dev/api/card/experience?theme=dark" />
+  <img alt="experience card" src="https://habibullah.dev/api/card/experience?theme=light" />
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://habibullah.dev/api/card/skills?theme=dark" />
+  <img alt="skills card" src="https://habibullah.dev/api/card/skills?theme=light" />
+</picture>
+
+</div>
 <!-- SYNC:CARDS:END -->
 
 ---
