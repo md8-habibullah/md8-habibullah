@@ -62,7 +62,7 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <!-- SYNC:STATS:START -->
 | Stars earned | Original repos | Followers | Public repos |
 | :---: | :---: | :---: | :---: |
-| **138** | **52** | **46** | **298** |
+| **138** | **52** | **45** | **298** |
 
 **Most-used languages** - `JavaScript 33%` `TypeScript 33%` `C 8%` `Shell 8%` `Python 5%` `HTML 5%` `C++ 5%` `MDX 3%`
 <!-- SYNC:STATS:END -->
@@ -70,6 +70,7 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <!-- SYNC:WIDGETS:START -->
 <div align="center">
 
+  <img src="https://streak-stats.demolab.com/?user=md8-habibullah&hide_border=true&background=00000000&stroke=888888&ring=4d4dff&fire=4d4dff&currStreakLabel=4d4dff&sideLabels=888888&dates=888888&currStreakNum=4d4dff&sideNums=4d4dff" alt="Contribution streak" />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=md8-habibullah&bg_color=00000000&color=888888&line=4d4dff&point=4d4dff&area=true&hide_border=true" alt="Contribution activity" />
 
 </div>
@@ -109,8 +110,6 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 Engineered a high-performance full-stack commercial platform for an IT agency using Next.js. Integrated Hashnode Headless API for dynamic SEO-optimized blogging and established robust automated CI/CD pipelines. Delivered a 100% production-ready system that increased client engagement metrics and organic search visibility.
 
 `Next.js` `GraphQL` `API` `Production`
-
-[Live](https://www.neurootix.com)
 
 #### Shadow_Logger
 
