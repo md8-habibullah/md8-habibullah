@@ -62,7 +62,7 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <!-- SYNC:STATS:START -->
 | Stars earned | Original repos | Followers | Public repos |
 | :---: | :---: | :---: | :---: |
-| **140** | **52** | **45** | **299** |
+| **145** | **52** | **46** | **299** |
 
 **Most-used languages** - `JavaScript 33%` `TypeScript 33%` `C 8%` `Shell 8%` `Python 5%` `HTML 5%` `C++ 5%` `MDX 3%`
 <!-- SYNC:STATS:END -->
@@ -132,12 +132,12 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 <!-- SYNC:TOPREPOS:START -->
 | Repository | ★ | Language | About |
 | :--- | :---: | :--- | :--- |
-| [top-github-repos-list](https://github.com/md8-habibullah/top-github-repos-list) | 111 | - | A curated list of top open-source GitHub repositories across various categories to help developers discover… |
+| [top-github-repos-list](https://github.com/md8-habibullah/top-github-repos-list) | 114 | - | A curated list of top open-source GitHub repositories across various categories to help developers discover… |
 | [GPG-keys-with-GitHub](https://github.com/md8-habibullah/GPG-keys-with-GitHub) | 6 | - | A step-by-step ultimate guide to generating, configuring, and using GPG keys with Git and GitHub to sign co… |
+| [awesome-senior-engineer-resources](https://github.com/md8-habibullah/awesome-senior-engineer-resources) | 2 | - | 🧠 300+ advanced open-source repos for senior & staff engineers - distributed systems, databases, Kubernete… |
+| [awesome-learn-to-code](https://github.com/md8-habibullah/awesome-learn-to-code) | 2 | - | 🌱 157 beginner-friendly open-source repos to learn to code - roadmaps, free courses & books, project-based… |
 | [telegram-bot-dev-resources](https://github.com/md8-habibullah/telegram-bot-dev-resources) | 2 | - | Curated list of Telegram Bot API libraries, frameworks, and SDKs in every major programming language. Perfe… |
 | [md8-habibullah](https://github.com/md8-habibullah/md8-habibullah) | 1 | JavaScript | Full-Stack Engineer \| DevOps & Security Specialist |
-| [awesome-senior-engineer-resources](https://github.com/md8-habibullah/awesome-senior-engineer-resources) | 1 | - | 🧠 300+ advanced open-source repos for senior & staff engineers - distributed systems, databases, Kubernete… |
-| [awesome-learn-to-code](https://github.com/md8-habibullah/awesome-learn-to-code) | 1 | - | 🌱 157 beginner-friendly open-source repos to learn to code - roadmaps, free courses & books, project-based… |
 <!-- SYNC:TOPREPOS:END -->
 
 ---
