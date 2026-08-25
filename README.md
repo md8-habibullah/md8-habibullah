@@ -62,7 +62,7 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <!-- SYNC:STATS:START -->
 | Stars earned | Original repos | Followers | Public repos |
 | :---: | :---: | :---: | :---: |
-| **145** | **52** | **46** | **299** |
+| **145** | **52** | **46** | **300** |
 
 **Most-used languages** - `JavaScript 33%` `TypeScript 33%` `C 8%` `Shell 8%` `Python 5%` `HTML 5%` `C++ 5%` `MDX 3%`
 <!-- SYNC:STATS:END -->
@@ -70,7 +70,7 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <!-- SYNC:WIDGETS:START -->
 <div align="center">
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=md8-habibullah&bg_color=00000000&color=888888&line=4d4dff&point=4d4dff&area=true&hide_border=true" alt="Contribution activity" />
+  <img src="https://streak-stats.demolab.com/?user=md8-habibullah&hide_border=true&background=00000000&stroke=888888&ring=4d4dff&fire=4d4dff&currStreakLabel=4d4dff&sideLabels=888888&dates=888888&currStreakNum=4d4dff&sideNums=4d4dff" alt="Contribution streak" />
 
 </div>
 <!-- SYNC:WIDGETS:END -->
