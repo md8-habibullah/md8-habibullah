@@ -62,7 +62,7 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <!-- SYNC:STATS:START -->
 | Stars earned | Original repos | Followers | Public repos |
 | :---: | :---: | :---: | :---: |
-| **146** | **52** | **46** | **300** |
+| **147** | **52** | **46** | **300** |
 
 **Most-used languages** - `JavaScript 33%` `TypeScript 33%` `C 8%` `Shell 8%` `Python 5%` `HTML 5%` `C++ 5%` `MDX 3%`
 <!-- SYNC:STATS:END -->
@@ -110,6 +110,8 @@ Engineered a high-performance full-stack commercial platform for an IT agency us
 
 `Next.js` `GraphQL` `API` `Production`
 
+[Live](https://www.neurootix.com)
+
 #### Shadow_Logger
 
 Developed a stealth-oriented key capture utility for advanced forensic system analysis. Implemented in raw C with a strict focus on low-level system hooks, minimal memory footprint, and evasive silent operation. Demonstrates deep understanding of OS architecture and secure, low-level data tracking.
@@ -132,7 +134,7 @@ Designed and deployed a scalable backend REST API using Node.js and Express to m
 <!-- SYNC:TOPREPOS:START -->
 | Repository | ★ | Language | About |
 | :--- | :---: | :--- | :--- |
-| [top-github-repos-list](https://github.com/md8-habibullah/top-github-repos-list) | 115 | - | A curated list of top open-source GitHub repositories across various categories to help developers discover… |
+| [top-github-repos-list](https://github.com/md8-habibullah/top-github-repos-list) | 116 | - | A curated list of top open-source GitHub repositories across various categories to help developers discover… |
 | [GPG-keys-with-GitHub](https://github.com/md8-habibullah/GPG-keys-with-GitHub) | 6 | - | A step-by-step ultimate guide to generating, configuring, and using GPG keys with Git and GitHub to sign co… |
 | [awesome-senior-engineer-resources](https://github.com/md8-habibullah/awesome-senior-engineer-resources) | 2 | - | 🧠 300+ advanced open-source repos for senior & staff engineers - distributed systems, databases, Kubernete… |
 | [awesome-learn-to-code](https://github.com/md8-habibullah/awesome-learn-to-code) | 2 | - | 🌱 157 beginner-friendly open-source repos to learn to code - roadmaps, free courses & books, project-based… |
