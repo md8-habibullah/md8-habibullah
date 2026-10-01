@@ -71,6 +71,8 @@ Spinning up backend architecture engines... I am Habibullah, a Full-Stack Engine
 <div align="center">
 
   <img src="https://streak-stats.demolab.com/?user=md8-habibullah&hide_border=true&background=00000000&stroke=888888&ring=4d4dff&fire=4d4dff&currStreakLabel=4d4dff&sideLabels=888888&dates=888888&currStreakNum=4d4dff&sideNums=4d4dff" alt="Contribution streak" />
+  <img src="https://github-readme-stats.vercel.app/api?username=md8-habibullah&show_icons=true&hide_border=true&bg_color=00000000&title_color=4d4dff&icon_color=4d4dff&text_color=888888" alt="GitHub stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=md8-habibullah&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=4d4dff&text_color=888888" alt="Top languages" />
 
 </div>
 <!-- SYNC:WIDGETS:END -->
